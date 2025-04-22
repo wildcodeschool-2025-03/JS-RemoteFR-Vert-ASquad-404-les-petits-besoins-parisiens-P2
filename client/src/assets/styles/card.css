@@ -1,0 +1,98 @@
+body {
+  background-color: #2d2e2d;
+}
+/* CARD TITLE */
+.mascotte {
+  width: 18vh;
+}
+.logoPage {
+  display: flex;
+  justify-content: center;
+  padding: 4vh;
+  h1 {
+    font-size: 4vh;
+    color: white;
+    max-width: 24vh;
+    padding-top: 1.8vh;
+    text-align: center;
+    font-family: "Righteous", sans-serif;
+  }
+}
+
+.toilettesImg {
+  width: 18vh;
+}
+.cardToilettes {
+  display: flex;
+  justify-content: center;
+}
+.cardToilettesTxt {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  font-size: 5vh;
+  padding-left: 2vh;
+  h2 {
+    font-size: 12vh;
+    font-family: "Righteous", sans-serif;
+  }
+}
+
+/* CARD LIST */
+
+.cardList {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 4vh;
+}
+.cardMap {
+  display: flex;
+  justify-content: center;
+  padding: 4vh;
+  max-height: 40vh;
+  .map {
+    border-radius: 7vh;
+    width: 150vh;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* CARD ADRESS */
+.cardAdress {
+  display: flex;
+  justify-content: center;
+  padding: 4vh;
+  max-height: 40vh;
+}
+.cardAdressInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 150vh;
+  max-height: 40vh;
+  background-color: #3c3b3b;
+  border-radius: 7vh;
+  height: 40vh;
+  color: white;
+  font-size: 6vh;
+  .geolocation {
+    width: 14vh;
+  }
+  button {
+    margin-top: 2vh;
+    margin-right: 2vh;
+    padding: 2vh;
+    color: white;
+    border-radius: 7vh;
+
+    background-color: #2d2e2d;
+  }
+  .rue {
+    padding-top: 2.5vh;
+  }
+}
