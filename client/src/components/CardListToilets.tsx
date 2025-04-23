@@ -1,5 +1,5 @@
+import ToiletsLogo from "../assets/images/map-Paris.png";
 import CardAdress from "./CardAdress";
-import ToiletsLogo from "./src/assets/images/map-Paris.png";
 
 export default function CardListToilets() {
   return (
