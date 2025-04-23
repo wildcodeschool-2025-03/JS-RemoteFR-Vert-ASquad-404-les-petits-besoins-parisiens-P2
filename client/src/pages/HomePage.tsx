@@ -1,7 +1,7 @@
 import "../assets/styles/homepage.css";
-import homeIcone from '../assets/images/home.png'
-import mascotte from  '../assets/images/Mascotte.svg'
-import background from '../assets/images/train.jpg'
+import mascotte from "../assets/images/Mascotte.svg";
+import homeIcone from "../assets/images/home.png";
+import background from "../assets/images/train.jpg";
 
 function HomePage() {
   return (
@@ -10,11 +10,7 @@ function HomePage() {
         <div className="container2">
           <div className="container1">
             <a href="/">
-              <img
-                src={homeIcone}
-                alt="Icone Home"
-                className="home"
-              />
+              <img src={homeIcone} alt="Icone Home" className="home" />
             </a>
             <h1>
               Les petits
@@ -23,19 +19,11 @@ function HomePage() {
               <br />
               parisiens
             </h1>
-            <img
-              src={mascotte}
-              alt="mascotte"
-              className="mascotte"
-            />
+            <img src={mascotte} alt="mascotte" className="mascotte" />
           </div>
           <p className="paragraphe">Trouver à proximité</p>
         </div>
-        <img
-          src= {background}
-          alt="train"
-          className="picturetrain"
-        />
+        <img src={background} alt="train" className="picturetrain" />
       </div>
     </>
   );
