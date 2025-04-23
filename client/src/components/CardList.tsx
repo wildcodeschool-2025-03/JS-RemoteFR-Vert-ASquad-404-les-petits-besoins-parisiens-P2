@@ -11,6 +11,7 @@ export default function CardList() {
         />
       </div>
       <CardAdress />
+      <CardAdress />
     </article>
   );
 }

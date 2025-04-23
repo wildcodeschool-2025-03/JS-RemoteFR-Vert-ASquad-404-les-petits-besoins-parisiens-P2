@@ -8,7 +8,9 @@ export default function CardAdress() {
           alt="ping"
         />
         <span className="rue">125 Avenue LEDRU ROLLIN</span>
-        <button type="button">Voir sur la carte</button>
+        <button className="view" type="button">
+          Voir sur la carte
+        </button>
       </div>
     </>
   );

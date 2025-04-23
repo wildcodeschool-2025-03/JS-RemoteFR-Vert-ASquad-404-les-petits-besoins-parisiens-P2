@@ -1,6 +1,6 @@
 export default function CardTitle() {
   return (
-    <>
+    <article className="cardTitle">
       <div className="logoPage">
         <img
           className="mascotte"
@@ -9,7 +9,8 @@ export default function CardTitle() {
         />
         <h1>LES PETITS BESOINS PARISIENS</h1>
       </div>
-      <article className="cardToilettes">
+      <img className="homeLogo" src="./src/assets/images/home.png" alt="home" />
+      <div className="cardToilettes">
         <img
           className="toilettesImg"
           src="./src/assets/images/toilettes.png"
@@ -19,7 +20,7 @@ export default function CardTitle() {
           <h2>Toilettes</h2>
           <p> 16 disponbiles</p>
         </div>
-      </article>
-    </>
+      </div>
+    </article>
   );
 }
