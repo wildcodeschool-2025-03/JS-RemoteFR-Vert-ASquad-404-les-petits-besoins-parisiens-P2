@@ -3,7 +3,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   /* CARD TITLE */
-  .mascotte {
+  .mascotteTitle {
     display: none;
   }
   .logoPage {
@@ -76,7 +76,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   /* CARD TITLE */
-  .mascotte {
+  .mascotteTitle {
     width: 18vh;
   }
   .logoPage {

@@ -6,7 +6,7 @@ export default function CardTitle() {
   return (
     <article className="cardTitle">
       <div className="logoPage">
-        <img className="mascotte" src={Mascotte} alt="logo" />
+        <img className="mascotteTitle" src={Mascotte} alt="logo" />
         <h1>LES PETITS BESOINS PARISIENS</h1>
       </div>
       <img className="homeLogo" src={HomePng} alt="home" />
