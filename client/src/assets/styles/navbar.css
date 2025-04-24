@@ -3,12 +3,6 @@
   padding: 0;
 }
 
-.navbar {
-  margin: 5%;
-  position: relative;
-  margin-top: auto;
-}
-
 .navbar-list {
   display: flex;
   justify-content: space-around;
