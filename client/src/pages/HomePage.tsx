@@ -25,7 +25,9 @@ function HomePage() {
             </div>
             <p className="paragraphe">Trouver à proximité</p>
           </div>
-          <NavBar />
+          <div className="navbarportable">
+            <NavBar />
+          </div>
         </div>
         <img src={background} alt="train" className="picturetrain" />
       </div>

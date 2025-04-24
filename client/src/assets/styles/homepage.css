@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10vh;
+    gap: 1.5rem;
   }
 
   .mascotte {
@@ -30,7 +30,7 @@
   h1 {
     color: white;
     background-image: none;
-    font-family: "Righteous", sans-serif;
+    font-family: "Righteous", cursive;
     text-align: center;
   }
 
@@ -47,10 +47,16 @@
     display: flex;
     flex-direction: column;
   }
+
+  .navbarportable {
+    position: fixed;
+    bottom: 0;
+    margin: 0.5rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
-  * {
+  body {
     background-color: #2d2e2d;
   }
 
@@ -61,7 +67,7 @@
   h1 {
     color: white;
     font-size: 8vh;
-    font-family: "Righteous", sans-serif;
+    font-family: "Righteous", cursive;
     text-align: center;
   }
 
@@ -94,7 +100,8 @@
     border-top-left-radius: 20vh;
     border-bottom-left-radius: 20vh;
     width: 50%;
-    height: auto;
+    height: 100vh;
+    object-fit: cover;
   }
 
   .container3 {
@@ -105,6 +112,7 @@
 
   .container4 {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    position: fixed;
   }
 }
