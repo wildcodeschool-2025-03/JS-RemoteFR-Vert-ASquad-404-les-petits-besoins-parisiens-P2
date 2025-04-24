@@ -3,12 +3,6 @@
   padding: 0;
 }
 
-.navbar {
-  margin: 5%;
-  position: relative;
-  margin-top: auto;
-}
-
 .navbar-list {
   display: flex;
   justify-content: space-around;
@@ -44,7 +38,8 @@
     padding: 10px;
     border-radius: 56px;
     transition: 0.5s;
-    height: auto;
+    height: 14rem;
+    width: 14rem;
   }
 
   .nav-container:hover {
