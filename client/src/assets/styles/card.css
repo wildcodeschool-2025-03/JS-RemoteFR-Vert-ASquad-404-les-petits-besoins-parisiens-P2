@@ -84,10 +84,10 @@
     justify-content: center;
     padding: 4vh;
     h1 {
-      font-size: 4vh;
+      font-size: 3.5vh;
       color: white;
       max-width: 24vh;
-      padding-top: 1.8vh;
+      padding-top: 3vh;
       text-align: center;
       font-family: "Righteous", sans-serif;
     }
@@ -97,7 +97,7 @@
   }
 
   .toilettesImg {
-    width: 18vh;
+    width: 15vh;
   }
   .cardToilettes {
     display: flex;
@@ -109,10 +109,10 @@
     flex-direction: column;
     color: white;
     text-align: center;
-    font-size: 5vh;
+    font-size: 4vh;
     padding-left: 2vh;
     h2 {
-      font-size: 12vh;
+      font-size: 8vh;
       font-family: "Righteous", sans-serif;
     }
   }
@@ -157,7 +157,7 @@
     border-radius: 7vh;
     height: 40vh;
     color: white;
-    font-size: 6vh;
+    font-size: 4vh;
     .geolocation {
       width: 14vh;
     }
