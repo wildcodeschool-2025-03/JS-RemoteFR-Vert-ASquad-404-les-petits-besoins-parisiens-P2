@@ -13,8 +13,8 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 6vh;
-    gap: 2vh;
+    padding-top: 3.5em;
+    gap: 2em;
   }
   .homeLogo {
     height: 7vh;
@@ -34,7 +34,6 @@ body {
     color: white;
     text-align: center;
     font-size: 1.2em;
-    padding-left: 2.5vw;
     h2 {
       font-size: 2.5em;
       font-family: "Righteous", sans-serif;
@@ -45,9 +44,9 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 4vh;
+    padding: 2em;
     padding-top: 0;
-    gap: 4vh;
+    gap: 2em;
   }
   .map {
     display: none;
@@ -58,7 +57,7 @@ body {
     width: 75vw;
     max-height: 40vh;
     background-color: #3c3b3b;
-    border-radius: 3vh;
+    border-radius: 2em;
     height: 30vh;
     color: white;
     font-size: 1.3em;
@@ -67,9 +66,6 @@ body {
       height: 8vh;
     }
     button {
-      color: white;
-      border-radius: 4vh;
-      background-color: #2d2e2d;
       display: none;
     }
   }
@@ -82,12 +78,12 @@ body {
   .logoPage {
     display: flex;
     justify-content: center;
-    padding: 4vh 0;
+    padding: 2em 0;
     h1 {
       font-size: 1.5em;
       color: white;
       max-width: 15vw;
-      padding-top: 3vh;
+      padding-top: 2em;
       text-align: center;
       font-family: "Righteous", sans-serif;
     }
@@ -110,7 +106,7 @@ body {
     color: white;
     text-align: center;
     font-size: 1.5em;
-    padding-left: 1.5vw;
+    padding-left: 1.2em;
     h2 {
       font-size: 2em;
       font-family: "Righteous", sans-serif;
@@ -123,16 +119,15 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 4vh 0;
-    gap: 4vh;
+    padding: 2.5em 0;
+    gap: 2.5em;
   }
   .cardMap {
     display: flex;
     justify-content: center;
-    padding: 4vh 0;
     max-height: 40vh;
     .map {
-      border-radius: 7vh;
+      border-radius: 3em;
       width: 75vw;
       object-fit: cover;
       display: flex;
@@ -144,7 +139,6 @@ body {
   .cardAdress {
     display: flex;
     justify-content: center;
-    padding: 4vh 0;
     max-height: 40vh;
   }
   .cardAdressInfo {
@@ -162,15 +156,15 @@ body {
       height: 14vh;
     }
     button {
-      margin-top: 2vh;
-      margin-right: 1.5vw;
-      padding: 2vh 2vw;
+      margin-top: 1em;
+      margin-right: 2em;
+      padding: 1em 2.5em;
       color: white;
       border-radius: 7vh;
       background-color: #2d2e2d;
     }
     .rue {
-      padding-top: 2.5vh;
+      padding-top: 1rem;
     }
   }
 }
