@@ -1,4 +1,4 @@
-.toiletsPage {
+body {
   background-color: #2d2e2d;
 }
 @media screen and (max-width: 768px) {
@@ -17,10 +17,10 @@
     gap: 2vh;
   }
   .homeLogo {
-    width: 7vh;
+    height: 7vh;
   }
   .toilettesImg {
-    width: 18vh;
+    height: 18vh;
   }
   .cardToilettes {
     display: flex;
@@ -33,10 +33,10 @@
     flex-direction: column;
     color: white;
     text-align: center;
-    font-size: 4vh;
-    padding-left: 2vh;
+    font-size: 1.2em;
+    padding-left: 2.5vw;
     h2 {
-      font-size: 6vh;
+      font-size: 2.5em;
       font-family: "Righteous", sans-serif;
     }
   }
@@ -55,16 +55,16 @@
   /* CARD ADRESS */
   .cardAdressInfo {
     display: flex;
-    width: 45vh;
+    width: 75vw;
     max-height: 40vh;
     background-color: #3c3b3b;
     border-radius: 3vh;
     height: 30vh;
     color: white;
-    font-size: 3vh;
+    font-size: 1.3em;
     .geolocation {
       display: none;
-      width: 8vh;
+      height: 8vh;
     }
     button {
       color: white;
@@ -77,16 +77,16 @@
 @media screen and (min-width: 768px) {
   /* CARD TITLE */
   .mascotteTitle {
-    width: 18vh;
+    height: 18vh;
   }
   .logoPage {
     display: flex;
     justify-content: center;
-    padding: 4vh;
+    padding: 4vh 0;
     h1 {
-      font-size: 3.5vh;
+      font-size: 1.5em;
       color: white;
-      max-width: 24vh;
+      max-width: 15vw;
       padding-top: 3vh;
       text-align: center;
       font-family: "Righteous", sans-serif;
@@ -97,7 +97,7 @@
   }
 
   .toilettesImg {
-    width: 15vh;
+    height: 15vh;
   }
   .cardToilettes {
     display: flex;
@@ -109,10 +109,10 @@
     flex-direction: column;
     color: white;
     text-align: center;
-    font-size: 4vh;
-    padding-left: 2vh;
+    font-size: 1.5em;
+    padding-left: 1.5vw;
     h2 {
-      font-size: 8vh;
+      font-size: 2em;
       font-family: "Righteous", sans-serif;
     }
   }
@@ -123,17 +123,17 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 4vh;
+    padding: 4vh 0;
     gap: 4vh;
   }
   .cardMap {
     display: flex;
     justify-content: center;
-    padding: 4vh;
+    padding: 4vh 0;
     max-height: 40vh;
     .map {
       border-radius: 7vh;
-      width: 150vh;
+      width: 75vw;
       object-fit: cover;
       display: flex;
       justify-content: center;
@@ -144,27 +144,27 @@
   .cardAdress {
     display: flex;
     justify-content: center;
-    padding: 4vh;
+    padding: 4vh 0;
     max-height: 40vh;
   }
   .cardAdressInfo {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    width: 150vh;
+    width: 75vw;
     max-height: 40vh;
     background-color: #3c3b3b;
     border-radius: 7vh;
     height: 40vh;
     color: white;
-    font-size: 4vh;
+    font-size: 1.8em;
     .geolocation {
-      width: 14vh;
+      height: 14vh;
     }
     button {
       margin-top: 2vh;
-      margin-right: 2vh;
-      padding: 2vh;
+      margin-right: 1.5vw;
+      padding: 2vh 2vw;
       color: white;
       border-radius: 7vh;
       background-color: #2d2e2d;
