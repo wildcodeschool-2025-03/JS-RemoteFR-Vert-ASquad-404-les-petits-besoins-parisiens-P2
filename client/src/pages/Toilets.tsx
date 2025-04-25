@@ -1,5 +1,5 @@
 import "../assets/styles/card.css";
-import CardListToilets from "../components/CardListToilets";
+import CardListToilets from "../components/CarListToilets";
 import CardTitle from "../components/CardTitle";
 export default function Toilets() {
   return (
