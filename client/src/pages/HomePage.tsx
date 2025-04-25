@@ -15,11 +15,11 @@ function HomePage() {
                 <img src={homeIcone} alt="Icone Home" className="home" />
               </a>
               <h1>
-                Les petits
+                LES PETITS
                 <br />
-                besoins
+                BESOINS
                 <br />
-                parisiens
+                PARISIENS
               </h1>
               <img src={mascotte} alt="mascotte" className="mascotte" />
             </div>

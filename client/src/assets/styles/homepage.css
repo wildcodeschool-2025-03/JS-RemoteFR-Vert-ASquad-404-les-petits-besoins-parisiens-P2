@@ -30,7 +30,7 @@
   h1 {
     color: white;
     background-image: none;
-    font-family: "Righteous", cursive;
+    font-family: "Righteous", sans-serif;
     text-align: center;
   }
 
@@ -66,18 +66,22 @@
 
   h1 {
     color: white;
-    font-size: 8vh;
-    font-family: "Righteous", cursive;
+    font-size: 2.7rem;
+    font-family: "Righteous", sans-serif;
+    letter-spacing: 0.3rem;
     text-align: center;
+    text-shadow: 1px 5px 5px black;
   }
 
   .mascotte {
-    width: 25vh;
+    width: 11rem;
   }
 
   .paragraphe {
     color: white;
-    font-size: 5vh;
+    font-size: 2.2rem;
+    font-family: "Roboto", sans-serif;
+    margin-top: 5%;
   }
 
   .container1 {
@@ -85,34 +89,34 @@
     flex-direction: row-reverse;
     align-items: center;
     justify-content: flex-end;
-    margin-right: 10vh;
-    margin-top: 10vh;
+    margin-top: 1.8rem;
   }
 
   .container2 {
     display: flex;
     flex-direction: column;
-    gap: 5vh;
+    gap: 2rem;
     align-items: center;
   }
 
   .picturetrain {
-    border-top-left-radius: 20vh;
-    border-bottom-left-radius: 20vh;
-    width: 50%;
-    height: 100vh;
+    border-top-left-radius: 17rem;
+    border-bottom-left-radius: 17rem;
     object-fit: cover;
+    margin-left: 10%;
+    box-shadow: -5px 0px 30px rgb(24, 24, 24);
   }
 
   .container3 {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-left: 10%;
   }
 
   .container4 {
     display: flex;
-    justify-content: space-between;
     position: fixed;
+    height: 100%;
   }
 }
