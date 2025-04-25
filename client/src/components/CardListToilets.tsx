@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import ToiletsCard from "./ToiletsCard";
 
-export default function CardList() {
+export default function CardListToilets() {
   type toiletsType = {
     adresse: string;
     arrondissement: string;

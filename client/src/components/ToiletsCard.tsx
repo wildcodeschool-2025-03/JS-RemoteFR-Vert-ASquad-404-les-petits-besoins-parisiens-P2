@@ -1,3 +1,4 @@
+import Geolocation from "../assets/images/geolocation.png";
 type toiletsType = {
   adresse: string;
   arrondissement: string;
@@ -11,5 +12,13 @@ type toiletsType = {
 };
 type Props = { toilets: toiletsType };
 export default function ToiletsCard(_props: Props) {
-  return <h1>W.C</h1>;
+  return (
+    <div className="cardAdressInfo">
+      <img className="geolocation" src={Geolocation} alt="ping" />
+      <span className="rue">125 Avenue LEDRU ROLLIN</span>
+      <button className="view" type="button">
+        Voir sur la carte
+      </button>
+    </div>
+  );
 }

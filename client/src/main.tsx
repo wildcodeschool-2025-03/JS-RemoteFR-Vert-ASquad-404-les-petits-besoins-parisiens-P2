@@ -8,7 +8,7 @@ import { RouterProvider, createBrowserRouter } from "react-router";
 // Import the main app component
 import App from "./App";
 import HomePage from "./pages/HomePage";
-import Toilets from "./pages/Toilets";
+import ToiletsPage from "./pages/ToiletsPage";
 
 // Import additional components for new routes
 // Try creating these components in the "pages" folder
@@ -27,7 +27,7 @@ const router = createBrowserRouter([
       { path: "/", element: <HomePage /> },
       {
         path: "/toilets",
-        element: <Toilets />,
+        element: <ToiletsPage />,
       },
       {
         path: "*",
