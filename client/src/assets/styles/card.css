@@ -1,0 +1,170 @@
+body {
+  background-color: #2d2e2d;
+}
+@media screen and (max-width: 768px) {
+  /* CARD TITLE */
+  .mascotteTitle {
+    display: none;
+  }
+  .logoPage {
+    display: none;
+  }
+  .cardTitle {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 3.5em;
+    gap: 2em;
+  }
+  .homeLogo {
+    height: 3.5em;
+  }
+  .toilettesImg {
+    height: 9em;
+  }
+  .cardToilettes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cardToilettesTxt {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    h2 {
+      font-size: 2.5em;
+      font-family: "Righteous", sans-serif;
+    }
+  }
+  /* CARD LIST */
+  .cardList {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2em;
+    padding-top: 0;
+    gap: 2em;
+  }
+  .map {
+    display: none;
+  }
+  /* CARD ADRESS */
+  .cardAdressInfo {
+    display: flex;
+    width: 15em;
+    max-height: 11em;
+    background-color: #3c3b3b;
+    border-radius: 2em;
+    height: 12em;
+    color: white;
+    font-size: 1.3em;
+    .geolocation {
+      display: none;
+      height: 4em;
+    }
+    button {
+      display: none;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  /* CARD TITLE */
+  .mascotteTitle {
+    height: 9em;
+  }
+  .logoPage {
+    display: flex;
+    justify-content: center;
+    padding: 2em 0;
+    h1 {
+      font-size: 1.5em;
+      color: white;
+      max-width: 8em;
+      padding-top: 1.5em;
+      text-align: center;
+      font-family: "Righteous", sans-serif;
+    }
+  }
+  .homeLogo {
+    display: none;
+  }
+
+  .toilettesImg {
+    height: 7.5em;
+  }
+  .cardToilettes {
+    display: flex;
+    justify-content: center;
+  }
+  .cardToilettesTxt {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    padding-left: 1.2em;
+    h2 {
+      font-size: 2em;
+      font-family: "Righteous", sans-serif;
+    }
+  }
+
+  /* CARD LIST */
+
+  .cardList {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2.5em 0;
+    gap: 2.5em;
+  }
+  .cardMap {
+    display: flex;
+    justify-content: center;
+    max-height: 17em;
+    .map {
+      border-radius: 3em;
+      width: 60em;
+      object-fit: cover;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  /* CARD ADRESS */
+  .cardAdress {
+    display: flex;
+    justify-content: center;
+    max-height: 60em;
+  }
+  .cardAdressInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 35em;
+    max-height: 17em;
+    background-color: #3c3b3b;
+    border-radius: 2em;
+    height: 9em;
+    color: white;
+    font-size: 1.8em;
+    .geolocation {
+      height: 3.5em;
+    }
+    button {
+      margin-top: 1em;
+      margin-right: 2em;
+      padding: 1em 2.5em;
+      color: white;
+      border-radius: 3.5em;
+      background-color: #2d2e2d;
+    }
+    .rue {
+      padding-top: 1rem;
+    }
+  }
+}
