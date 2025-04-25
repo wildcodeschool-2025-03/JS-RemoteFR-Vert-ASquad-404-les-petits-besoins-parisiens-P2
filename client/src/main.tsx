@@ -8,6 +8,7 @@ import { RouterProvider, createBrowserRouter } from "react-router";
 // Import the main app component
 import App from "./App";
 import HomePage from "./pages/HomePage";
+import StoresPage from "./pages/StoresPage";
 import Toilets from "./pages/Toilets";
 
 // Import additional components for new routes
@@ -27,6 +28,18 @@ const router = createBrowserRouter([
       { path: "/", element: <HomePage /> },
       {
         path: "/toilets",
+        element: <Toilets />,
+      },
+      {
+        path: "/fountains",
+        element: <Toilets />,
+      },
+      {
+        path: "/stores",
+        element: <StoresPage />,
+      },
+      {
+        path: "/defibrillators",
         element: <Toilets />,
       },
       {
