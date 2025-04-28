@@ -14,18 +14,26 @@ const NavBarDesktop = () => {
         <li>
           <NavLink to="/">
             <img src={Home} alt="home icon" className="nav-home" />
-          </NavLink> 
+          </NavLink>
         </li>
 
         <li className="nav-containerDesktop">
           <NavLink to="/toilets">
-            <img src={Toilette} alt="icon toilettes" className="nav-iconDesktop" />
+            <img
+              src={Toilette}
+              alt="icon toilettes"
+              className="nav-iconDesktop"
+            />
             <span className="nav-textDesktop">Toilettes</span>
           </NavLink>
         </li>
         <li className="nav-containerDesktop">
           <NavLink to="/fountain">
-            <img src={WaterFountain} alt="icon fontaine" className="nav-iconDesktop" />
+            <img
+              src={WaterFountain}
+              alt="icon fontaine"
+              className="nav-iconDesktop"
+            />
             <span className="nav-textDesktop">Fontaines à eau</span>
           </NavLink>
         </li>
@@ -38,11 +46,11 @@ const NavBarDesktop = () => {
         <li className="nav-containerDesktop">
           <NavLink to="/defibrillators">
             <img
-            src={Defibrillator}
-            alt="icon défibrilatteurs"
-            className="nav-iconDesktop"
-          />
-           <span className="nav-textDesktop">Défibrillateurs</span>
+              src={Defibrillator}
+              alt="icon défibrilatteurs"
+              className="nav-iconDesktop"
+            />
+            <span className="nav-textDesktop">Défibrillateurs</span>
           </NavLink>
         </li>
       </ul>

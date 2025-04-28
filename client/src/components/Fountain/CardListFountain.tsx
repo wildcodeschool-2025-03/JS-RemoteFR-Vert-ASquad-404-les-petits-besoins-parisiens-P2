@@ -7,7 +7,7 @@ function CardListFountains() {
     adresse: string;
     ligne: string;
     station_ou_gare: string;
-    code_postal : number;
+    code_postal: number;
     point_geographique: {
       lon: number;
       lat: number;
@@ -22,7 +22,7 @@ function CardListFountains() {
 
   useEffect(() => {
     fetch(
-      "https://data.ratp.fr/api/explore/v2.1/catalog/datasets/fontaines-a-eau-dans-le-reseau-ratp/records?where=commune%3D%22Paris%22&limit=100"
+      "https://data.ratp.fr/api/explore/v2.1/catalog/datasets/fontaines-a-eau-dans-le-reseau-ratp/records?where=commune%3D%22Paris%22&limit=100",
     )
       .then((response) => {
         if (!response.ok) {
@@ -39,8 +39,8 @@ function CardListFountains() {
       {fountains?.results.length ? (
         fountains.results.map((fountain) => (
           <FountainsCard key={fountain.identifiant_ratp} fountain={fountain} />
-    )) 
-    ) : (
+        ))
+      ) : (
         <h2>Loading, please wait a second...</h2>
       )}
     </article>

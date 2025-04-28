@@ -40,13 +40,13 @@
   background-image: url(../images/Nav/defibrillator.png);
 }
 
-@media screen and (max-width: 768px) {  
+@media screen and (max-width: 768px) {
   .navbar {
     position: absolute;
-    bottom: 0; 
+    bottom: 0;
     margin-left: 2rem;
-    }
-    
+  }
+
   .navbar-list {
     background-color: #f2f2f2b2;
     border-radius: 56px;
@@ -58,15 +58,15 @@
   .toilette-icon:hover {
     background-image: url(../images/Nav/toiletteHover.png);
   }
-  
+
   .fountain-icon:hover {
     background-image: url(../images/Nav/gouttes-deauHover.png);
   }
-  
+
   .shop-icon:hover {
     background-image: url(../images/Nav/shopHover.png);
   }
-  
+
   .defibrillator-icon:hover {
     background-image: url(../images/Nav/defibrillatorHover.png);
   }
