@@ -2,18 +2,24 @@ import "../assets/styles/card.css";
 import mapParis from "../assets/images/map-Paris.png";
 import CardListToilets from "../components/CardListToilets";
 import CardTitle from "../components/CardTitle";
+import NavBarDesktop from "../components/NavBarDesktop";
 import NavBar from "../components/Navbar";
 
 export default function ToiletsPage() {
   return (
-    <div className="toiletsPage">
+    <div className="page">
+      <div className="navBarDesktop">
+        <NavBarDesktop />
+      </div>
       <article className="cardList">
         <CardTitle />
         <div className="cardMap">
           <img className="map" src={mapParis} alt="mapParis" />
         </div>
+        <div className="navBarMobile">
+          <NavBar />
+        </div>
         <CardListToilets />
-        <NavBar />
       </article>
     </div>
   );

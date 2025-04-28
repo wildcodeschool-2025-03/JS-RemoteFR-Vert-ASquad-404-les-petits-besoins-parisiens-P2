@@ -4,8 +4,8 @@ import ToiletsCard from "./ToiletsCard";
 export default function CardListToilets() {
   type toiletsType = {
     adresse: string;
-    arrondissement: string;
-    horraire: string;
+    arrondissement: number;
+    horaire: string;
     acces_pmr: string;
     relais_bebe: string | null;
     geo_point_2d: {
@@ -36,7 +36,7 @@ export default function CardListToilets() {
   return (
     <article className="toilets-card-list">
       {Array.isArray(toilets?.results) ? (
-        toilets?.results.map((t) => (
+        toilets.results.map((t) => (
           <ToiletsCard key={t.geo_point_2d.lon} toilets={t} />
         ))
       ) : (
