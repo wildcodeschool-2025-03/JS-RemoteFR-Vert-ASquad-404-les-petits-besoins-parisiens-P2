@@ -7,6 +7,7 @@ import { RouterProvider, createBrowserRouter } from "react-router";
 
 // Import the main app component
 import App from "./App";
+import DefibrillatorPage from "./pages/DefibrillatorPage";
 import HomePage from "./pages/HomePage";
 import StoresPage from "./pages/StoresPage";
 import ToiletsPage from "./pages/ToiletsPage";
@@ -40,7 +41,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/defibrillators",
-        element: <ToiletsPage />,
+        element: <DefibrillatorPage />,
       },
       {
         path: "*",
