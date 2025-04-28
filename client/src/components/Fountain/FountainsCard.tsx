@@ -1,5 +1,4 @@
 import Geolocation from "../../assets/images/geolocation.png";
-import "../../assets/styles/fountain/fountainsCard.css"
 
 type FountainType = {
   identifiant_ratp: number;
@@ -20,7 +19,10 @@ function FountainsCard({ fountain }: Props) {
     <div className="cardAdressInfoFontain">
       <img className="geolocation" src={Geolocation} alt="ping" />
       <span className="fountain-adress">{fountain.adresse}</span>
-      <p className="fountain-info">{fountain.ligne}{fountain.station_ou_gare}</p>
+      <p className="fountain-info">
+        {fountain.ligne}
+        {fountain.station_ou_gare}
+      </p>
       <p>{fountain.code_postal}</p>
       <button className="view" type="button">
         Voir sur la carte
