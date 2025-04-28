@@ -22,6 +22,7 @@
     .rue {
       margin-top: 1rem;
       font-weight: bold;
+      margin-left: 2rem;
     }
     .arrondissement {
       display: flex;
@@ -41,7 +42,7 @@
   }
   .firstline {
     display: flex;
-    justify-content: space-between;
+    text-align: center;
   }
 }
 @media screen and (min-width: 768px) {
@@ -78,8 +79,9 @@
       margin-bottom: 2rem;
     }
     .rue {
-      padding-top: 1rem;
+      margin-top: 2rem;
       font-weight: bold;
+      margin-right: 2rem;
     }
   }
   .firstline {

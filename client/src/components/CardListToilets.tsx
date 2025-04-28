@@ -7,7 +7,7 @@ export default function CardListToilets() {
     arrondissement: number;
     horaire: string;
     acces_pmr: string;
-    relais_bebe: string | null;
+    relais_bebe: string;
     geo_point_2d: {
       lon: number;
       lat: number;
