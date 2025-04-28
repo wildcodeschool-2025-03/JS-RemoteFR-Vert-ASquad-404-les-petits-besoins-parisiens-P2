@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router";
 import Defibrillator from "../assets/images/Nav/defibrillator.svg";
 import Home from "../assets/images/Nav/home.png";
 import Shop from "../assets/images/Nav/shop.svg";
@@ -9,36 +9,41 @@ import "../assets/styles/navbardesktop.css";
 
 const NavBarDesktop = () => {
   return (
-    <nav className="navbar">
-      <ul className="navbar-list">
+    <nav className="navbarDesktop">
+      <ul className="navbar-listDesktop">
         <li>
-          <Link to="/" />
-          <img src={Home} alt="home icon" className="nav-home" />
+          <NavLink to="/">
+            <img src={Home} alt="home icon" className="nav-home" />
+          </NavLink> 
         </li>
 
-        <li className="nav-container">
-          <Link to="/toilets" />
-          <img src={Toilette} alt="icon toilettes" className="nav-icon" />
-          <span className="nav-text">Toilettes</span>
+        <li className="nav-containerDesktop">
+          <NavLink to="/toilets">
+            <img src={Toilette} alt="icon toilettes" className="nav-iconDesktop" />
+            <span className="nav-textDesktop">Toilettes</span>
+          </NavLink>
         </li>
-        <li className="nav-container">
-          <Link to="/fountain" />
-          <img src={WaterFountain} alt="icon fontaine" className="nav-icon" />
-          <span className="nav-text">Fontaines à eau</span>
+        <li className="nav-containerDesktop">
+          <NavLink to="/fountain">
+            <img src={WaterFountain} alt="icon fontaine" className="nav-iconDesktop" />
+            <span className="nav-textDesktop">Fontaines à eau</span>
+          </NavLink>
         </li>
-        <li className="nav-container">
-          <Link to="/stores" />
-          <img src={Shop} alt="icon commerces" className="nav-icon" />
-          <span className="nav-text">Commerces</span>
+        <li className="nav-containerDesktop">
+          <NavLink to="/stores">
+            <img src={Shop} alt="icon commerces" className="nav-iconDesktop" />
+            <span className="nav-textDesktop">Commerces</span>
+          </NavLink>
         </li>
-        <li className="nav-container">
-          <Link to="/defibrillators" />
-          <img
+        <li className="nav-containerDesktop">
+          <NavLink to="/defibrillators">
+            <img
             src={Defibrillator}
             alt="icon défibrilatteurs"
-            className="nav-icon"
+            className="nav-iconDesktop"
           />
-          <span className="nav-text">Défibrillateurs</span>
+           <span className="nav-textDesktop">Défibrillateurs</span>
+          </NavLink>
         </li>
       </ul>
     </nav>

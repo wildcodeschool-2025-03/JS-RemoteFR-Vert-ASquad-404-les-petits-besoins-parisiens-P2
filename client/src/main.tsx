@@ -10,6 +10,7 @@ import App from "./App";
 import HomePage from "./pages/HomePage";
 import StoresPage from "./pages/StoresPage";
 import ToiletsPage from "./pages/ToiletsPage";
+import FountainPage from "./pages/FountainPage";
 
 // Import additional components for new routes
 // Try creating these components in the "pages" folder
@@ -32,7 +33,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/fountains",
-        element: <ToiletsPage />,
+        element: <FountainPage />,
       },
       {
         path: "/stores",

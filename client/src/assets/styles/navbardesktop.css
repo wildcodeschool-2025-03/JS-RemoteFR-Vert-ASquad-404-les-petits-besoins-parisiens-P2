@@ -1,4 +1,4 @@
-.navbar-list {
+.navbar-listDesktop {
   display: flex;
   flex-direction: column;
   list-style-type: none;
@@ -9,11 +9,10 @@
 
 .nav-home {
   width: 40px;
-  background-color: black;
-  margin-left: 35px;
+  margin-left: 25px;
 }
 
-.nav-container {
+.nav-containerDesktop {
   transition: 0.8s;
   display: flex;
   align-items: center;
@@ -25,17 +24,18 @@
   padding: 10px;
 }
 
-.nav-icon {
-  height: auto;
-  padding: 15px;
-  width: 50px;
-  height: auto;
-}
-
-.nav-container:hover {
+.nav-containerDesktop:hover {
   box-shadow: 5px 8px 20px black;
 }
 
-.nav-text {
+.nav-iconDesktop {
+  height: auto;
+  padding: 15px;
+  width: 100%;
+  height: auto;
+}
+
+
+.nav-textDesktop {
   display: none;
 }
