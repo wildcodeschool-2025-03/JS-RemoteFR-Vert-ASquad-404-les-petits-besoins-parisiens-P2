@@ -2,11 +2,18 @@
   margin: 0;
   padding: 0;
 }
+
+.navbar {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .navbar-list {
   display: flex;
-  justify-content: center;
-  list-style-type: none;
-  text-align: center;
+  position: fixed;
+  bottom: 1%;
+  list-style: none;
 }
 
 .nav-icon {

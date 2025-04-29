@@ -28,7 +28,7 @@ const NavBarDesktop = () => {
           </NavLink>
         </li>
         <li className="nav-containerDesktop">
-          <NavLink to="/fountain">
+          <NavLink to="/fountains">
             <img
               src={WaterFountain}
               alt="icon fontaine"
