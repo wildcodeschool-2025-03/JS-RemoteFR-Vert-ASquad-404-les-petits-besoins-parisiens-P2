@@ -8,6 +8,7 @@ import { RouterProvider, createBrowserRouter } from "react-router";
 // Import the main app component
 import App from "./App";
 import DefibrillatorPage from "./pages/DefibrillatorPage";
+import FountainPage from "./pages/FountainPage";
 import HomePage from "./pages/HomePage";
 import StoresPage from "./pages/StoresPage";
 import ToiletsPage from "./pages/ToiletsPage";
@@ -33,7 +34,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/fountains",
-        element: <ToiletsPage />,
+        element: <FountainPage />,
       },
       {
         path: "/stores",
