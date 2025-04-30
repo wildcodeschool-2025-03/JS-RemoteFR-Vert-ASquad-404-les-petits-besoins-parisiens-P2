@@ -2,24 +2,80 @@
   margin: 0;
   padding: 0;
 }
+
+.navbar {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .navbar-list {
   display: flex;
-  justify-content: space-around;
-  list-style-type: none;
-  text-align: center;
-  background-color: #f2f2f2d3;
-  padding: 15px;
-  border-radius: 56px;
+  position: fixed;
+  bottom: 1%;
+  list-style: none;
 }
 
 .nav-icon {
-  width: 60%;
-  transition: color 0.5s ease;
+  padding: 1.6rem;
+  transition: 0.3s ease;
   cursor: pointer;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
 }
 
 .nav-text {
   display: none;
+}
+
+.toilette-icon {
+  background-image: url(../images/Nav/toilette.png);
+}
+
+.fountain-icon {
+  background-image: url(../images/Nav/gouttes-deau.png);
+}
+
+.shop-icon {
+  background-image: url(../images/Nav/shop.png);
+}
+
+.defibrillator-icon {
+  background-image: url(../images/Nav/defibrillator.png);
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    position: absolute;
+    bottom: 0;
+    margin-left: 2rem;
+  }
+
+  .navbar-list {
+    background-color: #f2f2f2b2;
+    border-radius: 56px;
+    gap: 15px;
+    padding: 1rem 1.7rem;
+    margin: 0 0 15px;
+  }
+
+  .toilette-icon:hover {
+    background-image: url(../images/Nav/toiletteHover.png);
+  }
+
+  .fountain-icon:hover {
+    background-image: url(../images/Nav/gouttes-deauHover.png);
+  }
+
+  .shop-icon:hover {
+    background-image: url(../images/Nav/shopHover.png);
+  }
+
+  .defibrillator-icon:hover {
+    background-image: url(../images/Nav/defibrillatorHover.png);
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -37,8 +93,8 @@
     margin: 5px;
     border-radius: 56px;
     transition: 0.5s;
-    height: 14rem;
-    width: 15rem;
+    height: 11rem;
+    width: 14rem;
   }
 
   .nav-container:hover {
@@ -47,13 +103,14 @@
   }
 
   .nav-icon {
-    padding: 0.8rem;
-    width: 70%;
+    margin-top: 2%;
+    padding: 2.7rem;
+    width: 100%;
   }
 
   .nav-text {
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 500;
     padding: 1rem;
     font-family: "Roboto", sans-serif;
