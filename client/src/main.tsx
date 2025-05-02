@@ -7,6 +7,7 @@ import { RouterProvider, createBrowserRouter } from "react-router";
 
 // Import the main app component
 import App from "./App";
+import { LocaleProvider } from "./contexts/LocaleContext";
 import DefibrillatorPage from "./pages/DefibrillatorPage";
 import FountainPage from "./pages/FountainPage";
 import HomePage from "./pages/HomePage";
@@ -66,7 +67,9 @@ if (rootElement == null) {
 // Render the app inside the root element
 createRoot(rootElement).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <LocaleProvider>
+      <RouterProvider router={router} />
+    </LocaleProvider>
   </StrictMode>,
 );
 

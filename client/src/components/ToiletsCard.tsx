@@ -1,5 +1,6 @@
 import Geolocation from "../assets/images/geolocation.png";
 import "../assets/styles/toiletsCard.css";
+import { useTranslation } from "../contexts/LocaleContext";
 type toiletsType = {
   adresse: string;
   arrondissement: number;
@@ -45,6 +46,8 @@ export default function ToiletsCard({ toilets }: Props) {
     return toilets.adresse;
   }
 
+  const { translations } = useTranslation();
+
   return (
     <div className="cardAdressInfoToilets">
       <div className="firstline">
@@ -56,21 +59,21 @@ export default function ToiletsCard({ toilets }: Props) {
           <h3> {eniem(toilets.arrondissement % 100)} arrondissement</h3>
         </article>
         <article className="oneline">
-          <h3>Horaires : </h3>
+          <h3>{translations.ToiletsCard.time}</h3>
           {clean(toilets.horaire)}
         </article>
       </div>
       <div className="pmr">
         <article className="oneline">
-          <h3>Accès PMR : </h3> {toilets.acces_pmr}
+          <h3>{translations.ToiletsCard.access}</h3> {toilets.acces_pmr}
         </article>
         <article className="oneline">
-          <h3>Relai bébé :</h3> {nc(toilets.relais_bebe)}
+          <h3>{translations.ToiletsCard.baby}</h3> {nc(toilets.relais_bebe)}
         </article>
       </div>
       <article className="buttonView">
         <button className="view" type="button">
-          Voir sur la carte
+          {translations.DefibrillatorCard.view}
         </button>
       </article>
     </div>
