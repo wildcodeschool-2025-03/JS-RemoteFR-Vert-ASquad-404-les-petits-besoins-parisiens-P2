@@ -4,6 +4,7 @@ import CardListDefibrillators from "../components/CardListDefibrillator";
 import CardTitle from "../components/CardTitle";
 import NavBarDesktop from "../components/NavBarDesktop";
 import NavBar from "../components/Navbar";
+import ScrollToTopButton from "../components/ScrollToTopButton";
 
 function DefibrillatorPage() {
   return (
@@ -22,6 +23,7 @@ function DefibrillatorPage() {
             <NavBar />
           </div>
         </article>
+        <ScrollToTopButton />
       </div>
     </>
   );

@@ -1,6 +1,7 @@
 import CardList from "../components/CardList";
 import NavBarDesktop from "../components/NavBarDesktop";
 import NavBar from "../components/Navbar";
+import ScrollToTopButton from "../components/ScrollToTopButton";
 
 function StoresPage() {
   return (
@@ -12,6 +13,7 @@ function StoresPage() {
       <div className="nav-mobile desktop">
         <NavBar />
       </div>
+      <ScrollToTopButton />
     </div>
   );
 }
