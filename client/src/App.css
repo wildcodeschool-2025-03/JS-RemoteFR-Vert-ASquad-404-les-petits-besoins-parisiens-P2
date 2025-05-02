@@ -11,6 +11,9 @@
 .light {
   background-color: pink;
   color: #2d2e2d;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
   .buttonLight {
     background-color: pink;
     border-style: none;
@@ -21,6 +24,9 @@
 }
 .dark {
   background-color: #2d2e2d;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
   .buttonDark {
     background-color: #2d2e2d;
     border-style: none;

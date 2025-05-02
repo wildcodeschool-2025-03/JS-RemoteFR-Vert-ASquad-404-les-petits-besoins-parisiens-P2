@@ -3,12 +3,10 @@ import { NavLink } from "react-router-dom";
 import mascotte from "../assets/images/Mascotte.svg";
 import homeIcone from "../assets/images/home.png";
 import background from "../assets/images/train.jpg";
-import DarkModeButton from "../components/DarkModeButton";
 import NavBar from "../components/Navbar";
 function HomePage() {
   return (
     <>
-      <DarkModeButton />
       <div className="container4">
         <div className="container3">
           <div className="container2">
