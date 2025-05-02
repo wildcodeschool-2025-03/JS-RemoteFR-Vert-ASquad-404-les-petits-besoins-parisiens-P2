@@ -26,10 +26,10 @@
 
   "DefibrillatorCard": {
     "functioncite": "Métro",
-    "time": "Horaire",
-    "available": "Disponibilité",
-    "access": "Disponibilité",
-    "view": "Voir sur la carte"
+    "time": "Horaire: ",
+    "available": "Disponibilité: ",
+    "access": "Disponibilité: ",
+    "view": "Voir sur la carte: "
   },
 
   "navbar": {
@@ -47,9 +47,14 @@
   },
 
   "ToiletsCard": {
-    "time": "Horaire",
-    "access": "Accès PMR",
-    "baby": "Relais bébé",
-    "view": "Voir sur la carte"
+    "time": "Horaire: ",
+    "access": "Accès PMR: ",
+    "baby": "Relais bébé: ",
+    "view": "Voir sur la carte: "
+  },
+
+  "fountainsCard": {
+    "line": "ligne: ",
+    "view": "Voir sur la carte: "
   }
 }
