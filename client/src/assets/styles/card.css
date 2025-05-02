@@ -51,6 +51,12 @@ body {
   .map {
     display: none;
   }
+
+  /* NAV BAR */
+  .navBarDesktop {
+    display: none;
+  }
+
   /* CARD ADRESS */
   .cardAdressInfo {
     display: flex;
@@ -72,6 +78,10 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
+  .page {
+    display: flex;
+    justify-content: center;
+  }
   /* CARD TITLE */
   .mascotteTitle {
     height: 9em;
@@ -133,6 +143,19 @@ body {
       display: flex;
       justify-content: center;
     }
+  }
+
+  /* NAV BAR */
+  .navBarDesktop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 10%;
+    margin-left: 3%;
+  }
+
+  .navBarMobile {
+    display: none;
   }
 
   /* CARD ADRESS */

@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import HomePng from "../assets/images/home.png";
 import Mascotte from "../assets/images/mascotte.svg";
 import Toilets from "../assets/images/toilettes.png";
@@ -9,7 +10,9 @@ export default function CardTitle() {
         <img className="mascotteTitle" src={Mascotte} alt="logo" />
         <h1>LES PETITS BESOINS PARISIENS</h1>
       </div>
-      <img className="homeLogo" src={HomePng} alt="home" />
+      <NavLink to="/">
+        <img className="homeLogo" src={HomePng} alt="home" />
+      </NavLink>
       <div className="cardToilettes">
         <img className="toilettesImg" src={Toilets} alt="toilettes" />
         <div className="cardToilettesTxt">

@@ -16,7 +16,7 @@ function FountainPage() {
         <div className="cardMap">
           <img className="map" src={mapParis} alt="mapParis" />
         </div>
-        <div className="navBarMobile">
+        <div className="nav-mobile desktop">
           <NavBar />
         </div>
         <CardListFountain />

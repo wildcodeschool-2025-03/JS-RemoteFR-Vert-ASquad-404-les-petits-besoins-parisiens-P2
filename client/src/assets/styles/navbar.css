@@ -3,16 +3,7 @@
   padding: 0;
 }
 
-.navbar {
-  position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
 .navbar-list {
-  display: flex;
-  position: fixed;
-  bottom: 1%;
   list-style: none;
 }
 
@@ -47,18 +38,16 @@
 }
 
 @media screen and (max-width: 768px) {
-  .navbar {
-    position: absolute;
-    bottom: 0;
-    margin-left: 2rem;
+  .nav-icon {
+    width: 65px;
+    height: 70px;
   }
-
   .navbar-list {
-    background-color: #f2f2f2b2;
+    background-color: #f2f2f2dc;
+    display: flex;
     border-radius: 56px;
     gap: 15px;
-    padding: 1rem 1.7rem;
-    margin: 0 0 15px;
+    padding: 1rem 2rem;
   }
 
   .toilette-icon:hover {
