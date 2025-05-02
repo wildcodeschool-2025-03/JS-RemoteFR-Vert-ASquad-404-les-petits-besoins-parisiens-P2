@@ -4,7 +4,6 @@ import CardTitle from "../components/CardTitle";
 import CardListFountain from "../components/Fountain/CardListFountain";
 import NavBarDesktop from "../components/NavBarDesktop";
 import NavBar from "../components/Navbar";
-import ScrollToTopButton from "../components/ScrollToTopButton";
 
 function FountainPage() {
   return (
@@ -22,7 +21,6 @@ function FountainPage() {
         </div>
         <CardListFountain />
       </article>
-      <ScrollToTopButton />
     </div>
   );
 }

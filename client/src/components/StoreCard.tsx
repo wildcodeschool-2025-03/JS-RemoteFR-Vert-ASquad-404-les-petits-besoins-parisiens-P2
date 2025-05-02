@@ -1,4 +1,4 @@
-import Geolocation from "../assets/images/sucette.png";
+import Geolocation from "../assets/images/geolocation.png";
 import "../assets/styles/shopCard.css";
 
 type storeType = {
@@ -27,13 +27,11 @@ function StoreCard({ store }: Props) {
           {store.dea_commune_livraison}
         </span>
       </div>
-      <span className="fountain-info">
+      <span className="shop-info">
         <p>
           {store.tco_libelle} | {store.dea_nom_commerce}
         </p>
-        {store.dea_jour_fermeture && (
-          <p className="code-postal">Fermé le : {store.dea_jour_fermeture}</p>
-        )}
+        <p className="code-postal">Fermé le : {store.dea_jour_fermeture}</p>
       </span>
       <button className="button-shop" type="button">
         Voir sur la carte

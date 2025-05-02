@@ -4,7 +4,6 @@ import CardListToilets from "../components/CardListToilets";
 import CardTitle from "../components/CardTitle";
 import NavBarDesktop from "../components/NavBarDesktop";
 import NavBar from "../components/Navbar";
-import ScrollToTopButton from "../components/ScrollToTopButton";
 
 export default function ToiletsPage() {
   return (
@@ -22,7 +21,6 @@ export default function ToiletsPage() {
         </div>
         <CardListToilets />
       </article>
-      <ScrollToTopButton />
     </div>
   );
 }

@@ -4,7 +4,6 @@ import CardListShop from "../components/CardListShop";
 import CardTitle from "../components/CardTitle";
 import NavBarDesktop from "../components/NavBarDesktop";
 import NavBar from "../components/Navbar";
-import ScrollToTopButton from "../components/ScrollToTopButton";
 
 function StoresPage() {
   return (
@@ -22,7 +21,6 @@ function StoresPage() {
         </div>
         <CardListShop />
       </article>
-      <ScrollToTopButton />
     </div>
   );
 }
