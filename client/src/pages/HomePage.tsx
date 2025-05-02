@@ -1,4 +1,5 @@
 import "../assets/styles/homepage.css";
+import { NavLink } from "react-router-dom";
 import mascotte from "../assets/images/Mascotte.svg";
 import homeIcone from "../assets/images/home.png";
 import background from "../assets/images/train.jpg";
@@ -15,10 +16,11 @@ function HomePage() {
         <div className="container3">
           <div className="container2">
             <div className="container1">
-              <a href="/">
+              <NavLink to="/">
                 <img src={homeIcone} alt="Icone Home" className="home" />
               </a>
               <ButtonLanguage />
+              </NavLink>
               <h1>
                 LES PETITS
                 <br />
@@ -30,9 +32,9 @@ function HomePage() {
             </div>
             <p className="paragraphe">{translations.homepage.paragraph}</p>
           </div>
-          <div className="navbarportable">
-            <NavBar />
-          </div>
+        </div>
+        <div className="nav-mobile">
+          <NavBar />
         </div>
         <img src={background} alt="train" className="picturetrain" />
       </div>
