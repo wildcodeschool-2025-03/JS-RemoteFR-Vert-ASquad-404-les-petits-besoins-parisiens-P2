@@ -1,5 +1,6 @@
 import Geolocation from "../../assets/images/geolocation.png";
 import "../../assets/styles/fontainsCard.css";
+import { useTranslation } from "../../contexts/LocaleContext";
 
 type FountainType = {
   identifiant_ratp: number;
@@ -16,6 +17,7 @@ type FountainType = {
 type Props = { fountain: FountainType };
 
 function FountainsCard({ fountain }: Props) {
+  const { translations } = useTranslation();
   return (
     <div className="cardAdressInfoFontain">
       <div className="fountain-header">
@@ -24,12 +26,13 @@ function FountainsCard({ fountain }: Props) {
       </div>
       <span className="fountain-info">
         <p>
-          ligne {fountain.ligne} | {fountain.station_ou_gare}
+          {translations.fountainsCard.line} {fountain.ligne} |{" "}
+          {fountain.station_ou_gare}
         </p>
         <p className="code-postal">{fountain.code_postal}</p>
       </span>
       <button className="button-fountain" type="button">
-        Voir sur la carte
+        {translations.fountainsCard.view}
       </button>
     </div>
   );

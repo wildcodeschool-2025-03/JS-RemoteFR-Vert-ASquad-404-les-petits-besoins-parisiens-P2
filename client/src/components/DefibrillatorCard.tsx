@@ -1,5 +1,6 @@
 import "../assets/styles/defibrillatorcard.css";
 import Geolocation from "../assets/images/geolocation.png";
+import { useTranslation } from "../contexts/LocaleContext";
 type defibrillatorsType = {
   lat_coor1: string;
   long_coord1: number;
@@ -38,6 +39,8 @@ export default function DefibrillatorCard(_props: Props) {
     return _props.defibrillator.adr_voie;
   }
 
+  const { translations } = useTranslation();
+
   return (
     <div className="cardAdressdefibrillators">
       <div className="firstline">
@@ -52,21 +55,23 @@ export default function DefibrillatorCard(_props: Props) {
           </h3>
         </article>
         <article className="oneline">
-          <h3>Horaires : </h3>
+          <h3>{translations.DefibrillatorCard.time}</h3>
           {_props.defibrillator.dispo_h}
         </article>
       </div>
       <div className="pmr">
         <article className="oneline">
-          <h3>Disponibilité: </h3> {_props.defibrillator.dispo_i}
+          <h3>{translations.DefibrillatorCard.available} </h3>{" "}
+          {_props.defibrillator.dispo_i}
         </article>
         <article className="oneline">
-          <h3>Accès libre :</h3> {_props.defibrillator.acc_lib}
+          <h3>{translations.DefibrillatorCard.access}</h3>{" "}
+          {_props.defibrillator.acc_lib}
         </article>
       </div>
       <article className="buttonView">
         <button className="view" type="button">
-          Voir sur la carte
+          {translations.DefibrillatorCard.view}
         </button>
       </article>
     </div>
