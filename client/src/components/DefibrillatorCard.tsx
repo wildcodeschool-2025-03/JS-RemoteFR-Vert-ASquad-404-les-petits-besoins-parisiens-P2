@@ -1,7 +1,6 @@
 import "../assets/styles/defibrillatorcard.css";
 import Geolocation from "../assets/images/geolocation.png";
 import { useTranslation } from "../contexts/LocaleContext";
-import ButtonLanguage from "./buttonLanguage";
 type defibrillatorsType = {
   lat_coor1: string;
   long_coord1: number;

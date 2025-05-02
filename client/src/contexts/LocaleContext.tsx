@@ -8,7 +8,7 @@ const translations = { fr, en };
 const LocaleContext = createContext<LocaleType>({
   lang: "fr",
   toggleLocale: () => undefined,
-  translations: translations["fr"],
+  translations: translations.fr,
 });
 
 export function LocaleProvider({ children }: { children: ReactNode }) {
