@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import StoreCard from "./StoreCard";
 
-function CardList() {
+function CardListShop() {
   type storeType = {
     tco_libelle: string;
     dea_code: number;
@@ -48,4 +48,4 @@ function CardList() {
   );
 }
 
-export default CardList;
+export default CardListShop;
