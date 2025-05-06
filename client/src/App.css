@@ -8,30 +8,29 @@
     display: none;
   }
 }
-.light {
-  background-color: pink;
-  color: #2d2e2d;
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  .buttonLight {
+@media screen and (min-width: 768px) {
+  .light {
     background-color: pink;
-    border-style: none;
-    margin-left: 1rem;
-    margin-top: 1rem;
-    font-size: 100px;
+    color: #2d2e2d;
+
+    .buttonLight {
+      background-color: pink;
+      border-style: none;
+      font-size: 70px;
+    }
+  }
+  .dark {
+    background-color: #2d2e2d;
+
+    .buttonDark {
+      background-color: #2d2e2d;
+      border-style: none;
+      font-size: 70px;
+    }
   }
 }
-.dark {
+.languageButton {
   background-color: #2d2e2d;
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  .buttonDark {
-    background-color: #2d2e2d;
-    border-style: none;
-    margin-left: 1rem;
-    margin-top: 1rem;
-    font-size: 100px;
-  }
+  border-style: none;
+  font-size: 35px;
 }

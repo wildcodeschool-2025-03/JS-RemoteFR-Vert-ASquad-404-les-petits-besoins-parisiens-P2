@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @media screen and (max-width: 768px) {
   body {
     background-image: url("./src/assets/images/train.jpg");
@@ -61,6 +67,11 @@
 }
 
 @media screen and (min-width: 768px) {
+  body {
+    background-color: #2d2e2d;
+    text-align: center;
+  }
+
   .home {
     display: none;
   }

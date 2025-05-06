@@ -4,8 +4,13 @@ function ButtonLanguage() {
   const { lang, toggleLocale } = useTranslation();
 
   return (
-    <button type="button" onClick={toggleLocale}>
-      {lang === "fr" ? "English" : "français"}
+    <button
+      type="button"
+      className="languageButton
+    "
+      onClick={toggleLocale}
+    >
+      {lang === "fr" ? "🇬🇧" : "🇫🇷"}
     </button>
   );
 }

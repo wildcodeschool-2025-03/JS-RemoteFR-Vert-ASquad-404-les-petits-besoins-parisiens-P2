@@ -10,10 +10,10 @@ export default function ToiletsPage() {
   return (
     <div className="page">
       <div className="navBarDesktop">
+        <DarkModeButton />
         <NavBarDesktop />
       </div>
       <article className="cardList">
-        <DarkModeButton />
         <CardTitle />
         <div className="cardMap">
           <img className="map" src={mapParis} alt="mapParis" />
