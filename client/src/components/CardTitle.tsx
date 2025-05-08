@@ -1,4 +1,5 @@
 import { useLocation } from "react-router";
+import { NavLink } from "react-router-dom";
 import Defibrillator from "../assets/images/heart.png";
 import HomePng from "../assets/images/home.png";
 import Mascotte from "../assets/images/mascotte.svg";
@@ -36,7 +37,9 @@ export default function CardTitle() {
         <img className="mascotteTitle" src={Mascotte} alt="logo" />
         <h1>LES PETITS BESOINS PARISIENS</h1>
       </div>
-      <img className="homeLogo" src={HomePng} alt="home" />
+      <NavLink to="/">
+        <img className="homeLogo" src={HomePng} alt="home" />
+      </NavLink>
       <div className="cardToilettes">
         <img className="toilettesImg" src={navImages} alt="toilettes" />
         <div className="cardToilettesTxt">
