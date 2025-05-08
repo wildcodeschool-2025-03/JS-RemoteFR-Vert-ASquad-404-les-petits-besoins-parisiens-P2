@@ -2,3 +2,36 @@
   margin: 0;
   padding: 0;
 }
+@media screen and (max-width: 768px) {
+  .buttonDark,
+  .buttonLight {
+    display: none;
+  }
+}
+.light {
+  background-color: pink;
+  color: #2d2e2d;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  .buttonLight {
+    background-color: pink;
+    border-style: none;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    font-size: 100px;
+  }
+}
+.dark {
+  background-color: #2d2e2d;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  .buttonDark {
+    background-color: #2d2e2d;
+    border-style: none;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    font-size: 100px;
+  }
+}

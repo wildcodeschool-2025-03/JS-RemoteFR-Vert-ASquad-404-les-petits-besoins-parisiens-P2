@@ -6,7 +6,6 @@ import background from "../assets/images/train.jpg";
 import NavBar from "../components/Navbar";
 import ButtonLanguage from "../components/buttonLanguage";
 import { useTranslation } from "../contexts/LocaleContext";
-
 function HomePage() {
   const { translations } = useTranslation();
 
@@ -35,6 +34,7 @@ function HomePage() {
         <div className="nav-mobile">
           <NavBar />
         </div>
+
         <img src={background} alt="train" className="picturetrain" />
       </div>
     </>

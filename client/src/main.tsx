@@ -2,6 +2,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router";
+import { ThemeProvider } from "./contexts/ThemeContext";
 
 /* ************************************************************************* */
 
@@ -67,9 +68,11 @@ if (rootElement == null) {
 // Render the app inside the root element
 createRoot(rootElement).render(
   <StrictMode>
-    <LocaleProvider>
-      <RouterProvider router={router} />
-    </LocaleProvider>
+    <ThemeProvider>
+      <LocaleProvider>
+        <RouterProvider router={router} />
+      </LocaleProvider>
+    </ThemeProvider>
   </StrictMode>,
 );
 
