@@ -21,7 +21,11 @@
 
   "CardTitle": {
     "titre": "Toilettes",
-    "paragraph": "disponible"
+    "paragraph": "disponible",
+    "Toilet": "Toilettes",
+    "Waterfountains": "Fontaines à eau",
+    "shops": "Commerces",
+    "Defibrillators": "Défibrillateurs"
   },
 
   "DefibrillatorCard": {
@@ -40,10 +44,10 @@
   },
 
   "navbarDesktop": {
-    "Toilet": "Toilet",
-    "Water fountains": "Water fountains",
-    "shops": "shops",
-    "Defibrillators": "Defibrillator"
+    "Toilet": "Toilettes",
+    "Waterfountains": "Fontaines à eau",
+    "shops": "Commerces",
+    "Defibrillators": "Défibrillateurs"
   },
 
   "ToiletsCard": {
@@ -56,5 +60,10 @@
   "fountainsCard": {
     "line": "ligne: ",
     "view": "Voir sur la carte: "
+  },
+
+  "shopCard": {
+    "view": "Voir sur la carte : ",
+    "closedOn": "Fermé le : "
   }
 }
