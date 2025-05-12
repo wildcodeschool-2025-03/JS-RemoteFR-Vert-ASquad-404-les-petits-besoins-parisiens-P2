@@ -1,3 +1,6 @@
+import Geolocation from "../assets/images/geolocation.png";
+import "../assets/styles/shopCard.css";
+
 type storeType = {
   tco_libelle: string;
   dea_code: number;
@@ -14,8 +17,27 @@ type storeType = {
 
 type Props = { store: storeType };
 
-function StoreCard(_props: Props) {
-  return <h1>Hello</h1>;
+function StoreCard({ store }: Props) {
+  return (
+    <div className="cardAdressInfoShop">
+      <div className="shop-header">
+        <img className="geolocation-shop" src={Geolocation} alt="ping" />
+        <span className="shop-adress">
+          {store.dea_rue_livraison}, {store.dea_cp_livraison}{" "}
+          {store.dea_commune_livraison}
+        </span>
+      </div>
+      <span className="shop-info">
+        <p>
+          {store.tco_libelle} | {store.dea_nom_commerce}
+        </p>
+        <p className="code-postal">Fermé le : {store.dea_jour_fermeture}</p>
+      </span>
+      <button className="button-shop" type="button">
+        Voir sur la carte
+      </button>
+    </div>
+  );
 }
 
 export default StoreCard;
