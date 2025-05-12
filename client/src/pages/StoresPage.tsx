@@ -1,8 +1,8 @@
 import "../assets/styles/card.css";
+import ToiletsLogo from "../assets/images/map-Paris.png";
 import CardTitle from "../components/CardTitle";
 import NavBar from "../components/Navbar";
 import StoreCardList from "../components/StoreCardList";
-import ToiletsLogo from "../assets/images/map-Paris.png";
 
 function StoresPage() {
   return (

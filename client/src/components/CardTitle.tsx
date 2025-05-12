@@ -14,7 +14,7 @@ export default function CardTitle() {
         <img className="toilettesImg" src={Toilets} alt="toilettes" />
         <div className="cardToilettesTxt">
           <h2>Toilettes</h2>
-          <p> 16 disponbiles</p>
+          <p> 16 disponibles</p>
         </div>
       </div>
     </article>

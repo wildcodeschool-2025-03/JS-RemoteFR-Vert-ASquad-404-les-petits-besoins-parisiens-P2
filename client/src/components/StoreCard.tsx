@@ -1,3 +1,5 @@
+import Geolocation from "../assets/images/geolocation.png";
+
 type storeType = {
   tco_libelle: string;
   dea_code: number;
@@ -15,7 +17,17 @@ type storeType = {
 type Props = { store: storeType };
 
 function StoreCard(_props: Props) {
-  return <h1>Hello</h1>;
+  return (
+    <>
+      <div className="cardAdressInfo">
+        <img className="geolocation" src={Geolocation} alt="ping" />
+        <span className="rue">125 Avenue LEDRU ROLLIN</span>
+        <button className="view" type="button">
+          Voir sur la carte
+        </button>
+      </div>
+    </>
+  );
 }
 
 export default StoreCard;
