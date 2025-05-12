@@ -2,6 +2,7 @@ import "../assets/styles/card.css";
 import mapParis from "../assets/images/map-Paris.png";
 import CardListToilets from "../components/CardListToilets";
 import CardTitle from "../components/CardTitle";
+import DarkModeButton from "../components/DarkModeButton";
 import NavBarDesktop from "../components/NavBarDesktop";
 import NavBar from "../components/Navbar";
 
@@ -12,6 +13,7 @@ export default function ToiletsPage() {
         <NavBarDesktop />
       </div>
       <article className="cardList">
+        <DarkModeButton />
         <CardTitle />
         <div className="cardMap">
           <img className="map" src={mapParis} alt="mapParis" />
