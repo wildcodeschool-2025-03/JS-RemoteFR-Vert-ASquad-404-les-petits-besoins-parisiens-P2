@@ -1,6 +1,7 @@
 import Geolocation from "../assets/images/geolocation.png";
 import "../assets/styles/shopCard.css";
 import { useTranslation } from "../contexts/LocaleContext";
+import ButtonLike from "./ButtonLike";
 
 type storeType = {
   tco_libelle: string;
@@ -49,6 +50,7 @@ function StoreCard({ store }: Props) {
       <button className="button-shop" type="button">
         {translations.shopCard.view}
       </button>
+      <ButtonLike/>
     </div>
   );
 }

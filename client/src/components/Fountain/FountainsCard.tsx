@@ -1,6 +1,7 @@
 import Geolocation from "../../assets/images/geolocation.png";
 import "../../assets/styles/fontainsCard.css";
 import { useTranslation } from "../../contexts/LocaleContext";
+import ButtonLike from "../ButtonLike";
 
 type FountainType = {
   identifiant_ratp: number;
@@ -48,6 +49,7 @@ function FountainsCard({ fountain }: Props) {
       <button className="button-fountain" type="button">
         {translations.fountainsCard.view}
       </button>
+      <ButtonLike/>
     </div>
   );
 }
