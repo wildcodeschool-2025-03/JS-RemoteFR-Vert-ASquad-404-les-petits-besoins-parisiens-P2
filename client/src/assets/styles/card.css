@@ -6,6 +6,14 @@
   .logoPage {
     display: none;
   }
+
+  .dark-mode {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 1000;
+  }
+
   .cardTitle {
     display: flex;
     align-items: center;
@@ -79,6 +87,14 @@
     display: flex;
     justify-content: center;
   }
+
+  .dark-mode {
+    position: absolute;
+    top: 40px;
+    left: 60px;
+    z-index: 1000;
+  }
+
   /* CARD TITLE */
   .mascotteTitle {
     height: 9em;

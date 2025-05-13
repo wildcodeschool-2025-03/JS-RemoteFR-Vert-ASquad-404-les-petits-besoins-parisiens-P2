@@ -9,11 +9,13 @@ import NavBar from "../components/Navbar";
 export default function ToiletsPage() {
   return (
     <div className="page">
+      <div className="dark-mode">
+        <DarkModeButton />
+      </div>
       <div className="navBarDesktop">
         <NavBarDesktop />
       </div>
       <article className="cardList">
-        <DarkModeButton />
         <CardTitle />
         <div className="cardMap">
           <img className="map" src={mapParis} alt="mapParis" />

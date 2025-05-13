@@ -42,38 +42,36 @@ export default function DefibrillatorCard(_props: Props) {
   const { translations } = useTranslation();
 
   return (
-    <div className="cardAdressdefibrillators">
-      <div className="firstline">
-        <img className="geolocation" src={Geolocation} alt="ping" />
-        <span className="rue">{cite(_props.defibrillator.adr_voie)}</span>
+    <div className="cardAdressDefibrillator">
+      <div className="defibrillator-header">
+        <img
+          className="geolocation-defibrillator"
+          src={Geolocation}
+          alt="ping"
+        />
+        <span className="defibrillator-adress">
+          {cite(_props.defibrillator.adr_voie)}
+        </span>
       </div>
-      <div className="horaires">
-        <article className="oneline arrondissement">
-          <h3>
-            {" "}
-            {arrondissement(_props.defibrillator.com_cp % 100)} arrondissement
-          </h3>
-        </article>
-        <article className="oneline">
-          <h3>{translations.DefibrillatorCard.time}</h3>
-          {_props.defibrillator.dispo_h}
-        </article>
-      </div>
-      <div className="pmr">
-        <article className="oneline">
-          <h3>{translations.DefibrillatorCard.available} </h3>{" "}
+      <div className="defibrillator-info">
+        <div>
+          {arrondissement(_props.defibrillator.com_cp % 100)} arrondissement
+        </div>
+        <div className="separation" />
+        <div>
+          {translations.DefibrillatorCard.time} {_props.defibrillator.dispo_h}
+        </div>
+        <div>
+          {translations.DefibrillatorCard.available}{" "}
           {_props.defibrillator.dispo_i}
-        </article>
-        <article className="oneline">
-          <h3>{translations.DefibrillatorCard.access}</h3>{" "}
-          {_props.defibrillator.acc_lib}
-        </article>
+        </div>
+        <div>
+          {translations.DefibrillatorCard.access} {_props.defibrillator.acc_lib}
+        </div>
       </div>
-      <article className="buttonView">
-        <button className="view" type="button">
-          {translations.DefibrillatorCard.view}
-        </button>
-      </article>
+      <button className="button-defibrillator" type="button">
+        {translations.DefibrillatorCard.view}
+      </button>
     </div>
   );
 }
