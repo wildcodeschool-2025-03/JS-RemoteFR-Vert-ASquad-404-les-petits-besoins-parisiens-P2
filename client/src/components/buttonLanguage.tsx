@@ -5,7 +5,7 @@ function ButtonLanguage() {
 
   return (
     <button type="button" onClick={toggleLocale}>
-      {lang === "fr" ? "English" : "français"}
+      {lang === "fr" ? "English" : "Français"}
     </button>
   );
 }
