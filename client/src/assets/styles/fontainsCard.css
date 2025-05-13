@@ -41,6 +41,13 @@
     margin-bottom: 1.5rem;
   }
 
+  .separation {
+    width: 100%;
+    height: 1px;
+    background-color: gray;
+    margin: 0.5rem 0;
+  }
+
   .button-fountain {
     width: 12rem;
     font-size: 1em;
@@ -81,7 +88,7 @@
 
   .fountain-header {
     display: grid;
-    grid-template-columns: 5rem 1fr;
+    grid-template-columns: 1rem 1fr;
     align-items: center;
     width: 100%;
     margin-top: 1rem;
@@ -104,6 +111,13 @@
     font-size: 1.5rem;
     margin-top: 1rem;
     margin-bottom: 1.5rem;
+  }
+
+  .separation {
+    width: 100%;
+    height: 1px;
+    background-color: gray;
+    margin: 0.5rem 0;
   }
 
   .button-fountain {

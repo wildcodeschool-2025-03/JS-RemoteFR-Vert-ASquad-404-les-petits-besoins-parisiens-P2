@@ -1,0 +1,20 @@
+.light {
+  background-color: rgb(206, 206, 206);
+  color: #2d2e2d;
+  .buttonLight {
+    background-color: rgb(206, 206, 206);
+    color: #1e1f1e;
+    border-style: none;
+    font-size: 45px;
+  }
+}
+
+.dark {
+  background-color: #2d2e2d;
+  .buttonDark {
+    color: white;
+    background-color: #2d2e2d;
+    border-style: none;
+    font-size: 45px;
+  }
+}
