@@ -73,7 +73,7 @@ export default function DefibrillatorCard(_props: Props) {
       <button className="button-defibrillator" type="button">
         {translations.DefibrillatorCard.view}
       </button>
-      <ButtonLike/>
+      <ButtonLike />
     </div>
   );
 }

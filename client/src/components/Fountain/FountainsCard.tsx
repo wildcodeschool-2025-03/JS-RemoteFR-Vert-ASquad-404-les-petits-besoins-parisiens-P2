@@ -49,7 +49,7 @@ function FountainsCard({ fountain }: Props) {
       <button className="button-fountain" type="button">
         {translations.fountainsCard.view}
       </button>
-      <ButtonLike/>
+      <ButtonLike />
     </div>
   );
 }

@@ -74,7 +74,7 @@ export default function ToiletsCard({ toilets }: Props) {
           {translations.DefibrillatorCard.view}
         </button>
       </article>
-      <ButtonLike/>
+      <ButtonLike />
     </div>
   );
 }

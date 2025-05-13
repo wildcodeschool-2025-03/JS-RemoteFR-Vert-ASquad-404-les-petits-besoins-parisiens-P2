@@ -50,7 +50,7 @@ function StoreCard({ store }: Props) {
       <button className="button-shop" type="button">
         {translations.shopCard.view}
       </button>
-      <ButtonLike/>
+      <ButtonLike />
     </div>
   );
 }
