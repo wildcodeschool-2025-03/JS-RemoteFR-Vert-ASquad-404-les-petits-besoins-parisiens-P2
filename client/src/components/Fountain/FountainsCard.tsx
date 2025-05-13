@@ -17,6 +17,17 @@ type FountainType = {
 type Props = { fountain: FountainType };
 
 function FountainsCard({ fountain }: Props) {
+  /* function pour les arrondissement*/
+  function eniem(eniem: number) {
+    if (eniem === 1) {
+      return "1er";
+    }
+    if (eniem === 2) {
+      return "2nd";
+    }
+    return ` ${eniem}ème `;
+  }
+
   const { translations } = useTranslation();
   return (
     <div className="cardAdressInfoFontain">
@@ -25,11 +36,14 @@ function FountainsCard({ fountain }: Props) {
         <span className="fountain-adress">{fountain.adresse}</span>
       </div>
       <span className="fountain-info">
+        <p className="code-postal">
+          {eniem(fountain.code_postal % 100)} arrondissement
+        </p>
+        <div className="separation" />
         <p>
-          {translations.fountainsCard.line} {fountain.ligne} |{" "}
+          {translations.fountainsCard.line} {fountain.ligne} |{"  "}
           {fountain.station_ou_gare}
         </p>
-        <p className="code-postal">{fountain.code_postal}</p>
       </span>
       <button className="button-fountain" type="button">
         {translations.fountainsCard.view}
