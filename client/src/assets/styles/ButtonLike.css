@@ -1,0 +1,12 @@
+.buttonLike {
+  margin: 1rem;
+  padding: 0.1rem;
+  font-size: 2rem;
+  background-color: #3c3b3b;
+}
+
+.buttonLike:hover {
+  border: 1.5px solid #a14aff;
+  color: #a14aff;
+  box-shadow: 5px 8px 20px black;
+}

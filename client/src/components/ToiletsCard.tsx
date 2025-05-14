@@ -1,6 +1,7 @@
 import Geolocation from "../assets/images/geolocation.png";
 import "../assets/styles/toiletsCard.css";
 import { useTranslation } from "../contexts/LocaleContext";
+import ButtonLike from "./ButtonLike";
 type toiletsType = {
   adresse: string;
   arrondissement: number;
@@ -73,6 +74,7 @@ export default function ToiletsCard({ toilets }: Props) {
           {translations.DefibrillatorCard.view}
         </button>
       </article>
+      <ButtonLike />
     </div>
   );
 }
