@@ -1,6 +1,7 @@
 import Geolocation from "../assets/images/geolocation.png";
 import "../assets/styles/toiletsCard.css";
 import { useTranslation } from "../contexts/LocaleContext";
+import ButtonLike from "./ButtonLike";
 type toiletsType = {
   adresse: string;
   arrondissement: number;
@@ -31,7 +32,7 @@ export default function ToiletsCard({ toilets }: Props) {
     }
     return "NC";
   }
-  /* function pour les horraires*/
+  /* function pour les horaires*/
   function clean(clean: string) {
     if (clean !== "Voir fiche équipement") {
       return toilets.horaire;
@@ -39,43 +40,41 @@ export default function ToiletsCard({ toilets }: Props) {
     return "NC";
   }
   /* function pour les adresses*/
-  function faceAu(faceAu: string) {
-    if (faceAu.includes("face au")) {
-      return toilets.adresse.substr(8);
-    }
-    return toilets.adresse;
+  function faceAu(adresse: string) {
+    const cleanAdresse = adresse.includes("face au")
+      ? adresse.substr(8)
+      : adresse;
+    const lowerAdresse = cleanAdresse.toLowerCase();
+    return lowerAdresse.charAt(0).toUpperCase() + lowerAdresse.slice(1);
   }
 
   const { translations } = useTranslation();
 
   return (
     <div className="cardAdressInfoToilets">
-      <div className="firstline">
-        <img className="geolocation" src={Geolocation} alt="ping" />
-        <span className="rue">{faceAu(toilets.adresse)}</span>
+      <div className="toilettes-header">
+        <img className="geolocation-toilettes" src={Geolocation} alt="ping" />
+        <span className="toilettes-adress">{faceAu(toilets.adresse)}</span>
       </div>
-      <div className="horaires">
-        <article className="oneline arrondissement">
-          <h3> {eniem(toilets.arrondissement % 100)} arrondissement</h3>
-        </article>
-        <article className="oneline">
-          <h3>{translations.ToiletsCard.time}</h3>
-          {clean(toilets.horaire)}
-        </article>
-      </div>
-      <div className="pmr">
-        <article className="oneline">
-          <h3>{translations.ToiletsCard.access}</h3> {toilets.acces_pmr}
-        </article>
-        <article className="oneline">
-          <h3>{translations.ToiletsCard.baby}</h3> {nc(toilets.relais_bebe)}
-        </article>
+      <div className="toilettes-info">
+        <div> {eniem(toilets.arrondissement % 100)} arrondissement</div>
+        <div className="separation" />
+        <div>
+          {translations.ToiletsCard.time} {clean(toilets.horaire)}
+        </div>
+        <div>
+          {translations.ToiletsCard.access} {toilets.acces_pmr}
+        </div>
+        <div>
+          {translations.ToiletsCard.baby} {nc(toilets.relais_bebe)}
+        </div>
       </div>
       <article className="buttonView">
-        <button className="view" type="button">
+        <button className="button-toilettes" type="button">
           {translations.DefibrillatorCard.view}
         </button>
       </article>
+      <ButtonLike />
     </div>
   );
 }
