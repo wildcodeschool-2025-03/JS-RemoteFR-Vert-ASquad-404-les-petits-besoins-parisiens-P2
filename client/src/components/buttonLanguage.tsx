@@ -1,16 +1,12 @@
 import { useTranslation } from "../contexts/LocaleContext";
+import "../assets/styles/homepage.css";
 
 function ButtonLanguage() {
   const { lang, toggleLocale } = useTranslation();
 
   return (
-    <button
-      type="button"
-      className="languageButton
-    "
-      onClick={toggleLocale}
-    >
-      {lang === "fr" ? "🇬🇧" : "🇫🇷"}
+    <button className="button-language" type="button" onClick={toggleLocale}>
+      {lang === "fr" ? "EN" : "FR"}
     </button>
   );
 }

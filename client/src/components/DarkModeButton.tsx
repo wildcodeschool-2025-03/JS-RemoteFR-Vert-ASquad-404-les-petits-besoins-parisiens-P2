@@ -1,4 +1,6 @@
+import { TbSunMoon } from "react-icons/tb";
 import { useDarkMode } from "../contexts/ThemeContext";
+import "../assets/styles/darkModeButton.css";
 
 export default function DarkModeButton() {
   const { theme, toggleTheme } = useDarkMode();
@@ -8,7 +10,7 @@ export default function DarkModeButton() {
       onClick={toggleTheme}
       type="button"
     >
-      {theme === "dark" ? "🌑" : "🌕"}
+      {theme === "dark" ? <TbSunMoon /> : <TbSunMoon />}
     </button>
   );
 }

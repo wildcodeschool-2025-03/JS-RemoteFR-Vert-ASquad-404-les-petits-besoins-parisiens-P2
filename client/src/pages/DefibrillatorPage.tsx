@@ -10,8 +10,10 @@ function DefibrillatorPage() {
   return (
     <>
       <div className="page">
-        <div className="navBarDesktop">
+        <div className="dark-mode">
           <DarkModeButton />
+        </div>
+        <div className="navBarDesktop">
           <NavBarDesktop />
         </div>
         <article className="cardList">

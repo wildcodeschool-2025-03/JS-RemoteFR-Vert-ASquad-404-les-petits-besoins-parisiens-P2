@@ -6,8 +6,10 @@ import Mascotte from "../assets/images/mascotte.svg";
 import Shop from "../assets/images/shop.png";
 import Toilets from "../assets/images/toilettes.png";
 import Fountain from "../assets/images/waterFountain.png";
+import { useTranslation } from "../contexts/LocaleContext";
 
 export default function CardTitle() {
+  const { translations } = useTranslation();
   const location = useLocation();
   let navImages = Toilets;
   let navTitle = "Toilettes";
@@ -15,19 +17,19 @@ export default function CardTitle() {
 
   if (location.pathname === "/toilets") {
     navImages = Toilets;
-    navTitle = "Toilettes";
+    navTitle = translations.CardTitle.Toilet;
     navNumber = 100;
   } else if (location.pathname === "/fountains") {
     navImages = Fountain;
-    navTitle = "Fountaines";
+    navTitle = translations.CardTitle.Waterfountains;
     navNumber = 46;
   } else if (location.pathname === "/stores") {
     navImages = Shop;
-    navTitle = "Commerces";
+    navTitle = translations.CardTitle.shops;
     navNumber = 100;
   } else if (location.pathname === "/defibrillators") {
     navImages = Defibrillator;
-    navTitle = "Defibrillateurs";
+    navTitle = translations.CardTitle.Defibrillators;
     navNumber = 100;
   }
 
@@ -44,7 +46,10 @@ export default function CardTitle() {
         <img className="toilettesImg" src={navImages} alt="toilettes" />
         <div className="cardToilettesTxt">
           <h2>{navTitle}</h2>
-          <p> {navNumber} disponibles</p>
+          <p>
+            {" "}
+            {navNumber} {translations.CardTitle.paragraph}
+          </p>
         </div>
       </div>
     </article>

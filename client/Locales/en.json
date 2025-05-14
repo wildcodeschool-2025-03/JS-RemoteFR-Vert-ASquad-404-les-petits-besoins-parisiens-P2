@@ -21,7 +21,11 @@
 
   "CardTitle": {
     "titre": "Toilet",
-    "paragraph": "Available"
+    "paragraph": "Available",
+    "Toilet": "Toilet",
+    "Waterfountains": "Water fountains",
+    "shops": "Shops",
+    "Defibrillators": "Defibrillator"
   },
 
   "DefibrillatorCard": {
@@ -34,15 +38,15 @@
 
   "navbar": {
     "Toilet": "Toilet",
-    "Water fountains": "Water fountains",
+    "Waterfountains": "Water fountains",
     "shops": "shops",
     "Defibrillators": "Defibrillator"
   },
 
   "navbarDesktop": {
     "Toilet": "Toilet",
-    "Water fountains": "Water fountains",
-    "shops": "shops",
+    "Waterfountains": "Water fountains",
+    "shops": "Shops",
     "Defibrillators": "Defibrillator"
   },
 
@@ -55,6 +59,11 @@
 
   "fountainsCard": {
     "line": "line: ",
-    "view": "View on the map "
+    "view": "View on the map :"
+  },
+
+  "shopCard": {
+    "view": "View on the map :",
+    "closedOn": "Closed on : "
   }
 }

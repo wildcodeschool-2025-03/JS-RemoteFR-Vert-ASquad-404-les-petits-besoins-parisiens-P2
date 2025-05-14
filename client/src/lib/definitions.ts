@@ -28,6 +28,10 @@ export type TranslationsType = {
   CardTitle: {
     titre: string;
     paragraph: string;
+    Toilet: string;
+    Waterfountains: string;
+    shops: string;
+    Defibrillators: string;
   };
 
   DefibrillatorCard: {
@@ -40,14 +44,14 @@ export type TranslationsType = {
 
   navbar: {
     Toilet: string;
-    "Water fountains": string;
+    Waterfountains: string;
     shops: string;
     Defibrillators: string;
   };
 
   navbarDesktop: {
     Toilet: string;
-    "Water fountains": string;
+    Waterfountains: string;
     shops: string;
     Defibrillators: string;
   };
@@ -62,5 +66,10 @@ export type TranslationsType = {
   fountainsCard: {
     line: string;
     view: string;
+  };
+
+  shopCard: {
+    view: string;
+    closedOn: string;
   };
 };
