@@ -15,8 +15,8 @@ function FountainPage() {
       </div>
       <article className="cardList">
         <CardTitle />
-        <div className="cardMap">
-          <img className="map" src={mapParis} alt="mapParis" />
+        <div className="cardmapStyle">
+          <img className="mapStyle" src={mapParis} alt="mapParis" />
         </div>
         <div className="nav-mobile desktop">
           <NavBar />

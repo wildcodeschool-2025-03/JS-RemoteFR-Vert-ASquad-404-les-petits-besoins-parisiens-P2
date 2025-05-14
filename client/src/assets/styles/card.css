@@ -45,7 +45,7 @@
     padding-top: 0;
     gap: 2em;
   }
-  .map {
+  .mapStyle {
     display: none;
   }
 
@@ -129,11 +129,11 @@
     flex-direction: column;
     gap: 2.5em;
   }
-  .cardMap {
+  .cardmapStyle {
     display: flex;
     justify-content: center;
     max-height: 17em;
-    .map {
+    .mapStyle {
       border-radius: 3em;
       width: 60em;
       object-fit: cover;
