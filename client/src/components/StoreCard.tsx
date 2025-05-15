@@ -1,5 +1,7 @@
 import Geolocation from "../assets/images/geolocation.png";
 import "../assets/styles/shopCard.css";
+import { useTranslation } from "../contexts/LocaleContext";
+import ButtonLike from "./ButtonLike";
 
 type storeType = {
   tco_libelle: string;
@@ -21,6 +23,7 @@ type Props = {
 };
 
 function StoreCard({ store, setPoiCenter }: Props) {
+  const { translations } = useTranslation();
   return (
     <div className="cardAdressInfoShop">
       <div className="shop-header">
@@ -34,7 +37,11 @@ function StoreCard({ store, setPoiCenter }: Props) {
         <p>
           {store.tco_libelle} | {store.dea_nom_commerce}
         </p>
-        <p className="code-postal">Fermé le : {store.dea_jour_fermeture}</p>
+        <p className="code-postal">
+          {" "}
+          {translations.shopCard.closedOn}
+          {store.dea_jour_fermeture}
+        </p>
       </span>
       <button
         className="button-shop"
@@ -51,8 +58,9 @@ function StoreCard({ store, setPoiCenter }: Props) {
           });
         }}
       >
-        Voir sur la carte
+        {translations.shopCard.view}
       </button>
+      <ButtonLike />
     </div>
   );
 }
