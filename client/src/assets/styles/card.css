@@ -56,6 +56,10 @@
   .mapStyle {
     display: none;
   }
+  .googleMapsStyle {
+    width: 80vw;
+    height: 40vh;
+  }
 
   /* NAV BAR */
   .navBarDesktop {
@@ -156,6 +160,10 @@
       display: flex;
       justify-content: center;
     }
+  }
+  .googleMapsStyle {
+    width: 60vw;
+    height: 40vh;
   }
 
   /* NAV BAR */

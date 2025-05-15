@@ -21,29 +21,25 @@ import {
   Map,
   Pin,
 } from "@vis.gl/react-google-maps";
+import "../../assets/styles/card.css";
 
 type Poi = { key: string; location: google.maps.LatLngLiteral };
 
 const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
 const locations: Poi[] = [
   {
-    key: "operaHouse",
+    key: "firstToiletResult",
     location: { lat: 48.88445504769741, lng: 2.3427360292097643 },
   },
 ];
+const firstToiletResult = { lat: 48.88445504769741, lng: 2.3427360292097643 };
 const MyMap = () => (
-  <APIProvider
-    apiKey={apiKey}
-    onLoad={() => console.log("Maps API has loaded.")}
-  >
-    <Map
-      mapId="DEMO_MAP_ID"
-      style={{ width: "60vw", height: "40vh" }}
-      defaultZoom={16}
-      defaultCenter={{ lat: 48.88445504769741, lng: 2.3427360292097643 }}
-    >
-      <PoiMarkers pois={locations} />
-    </Map>
+  <APIProvider apiKey={apiKey}>
+    <div className="googleMapsStyle">
+      <Map mapId="MyMapId" defaultZoom={17} defaultCenter={firstToiletResult}>
+        <PoiMarkers pois={locations} />
+      </Map>
+    </div>
   </APIProvider>
 );
 

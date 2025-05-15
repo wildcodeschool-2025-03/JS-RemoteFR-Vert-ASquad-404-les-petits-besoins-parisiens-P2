@@ -17,7 +17,7 @@ export default function ToiletsPage() {
       </div>
       <article className="cardList">
         <CardTitle />
-        <div className="cardMap">
+        <div>
           <MyMaps />
         </div>
         <div className="nav-mobile desktop">
