@@ -2,6 +2,8 @@ import Geolocation from "../assets/images/geolocation.png";
 import "../assets/styles/toiletsCard.css";
 import { useTranslation } from "../contexts/LocaleContext";
 import ButtonLike from "./ButtonLike";
+import SocialNetworks from "./SocialNetworks";
+
 type toiletsType = {
   adresse: string;
   arrondissement: number;
@@ -75,6 +77,7 @@ export default function ToiletsCard({ toilets }: Props) {
         </button>
       </article>
       <ButtonLike />
+      <SocialNetworks />
     </div>
   );
 }
