@@ -4,6 +4,7 @@ import CardListDefibrillators from "../components/CardListDefibrillator";
 import CardTitle from "../components/CardTitle";
 import DarkModeButton from "../components/DarkModeButton";
 import MyMaps from "../components/MyMaps/MyMaps";
+import Filter from "../components/FilterButton";
 import NavBarDesktop from "../components/NavBarDesktop";
 import NavBar from "../components/Navbar";
 import ScrollToTopButton from "../components/ScrollButton";
@@ -25,6 +26,9 @@ function DefibrillatorPage() {
       <div className="page">
         <div className="dark-mode">
           <DarkModeButton />
+        </div>
+        <div className="filter-button">
+          <Filter />
         </div>
         <div className="navBarDesktop">
           <NavBarDesktop />

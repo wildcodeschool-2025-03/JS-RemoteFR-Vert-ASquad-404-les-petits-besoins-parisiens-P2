@@ -1,19 +1,19 @@
-.light {
+.dark {
   background-color: rgb(206, 206, 206);
   color: #2d2e2d;
   .buttonLight {
-    background-color: rgb(206, 206, 206);
+    background-color: rgba(206, 206, 206, 0);
     color: #1e1f1e;
     border-style: none;
     font-size: 45px;
   }
 }
 
-.dark {
+.light {
   background-color: #2d2e2d;
   .buttonDark {
     color: white;
-    background-color: #2d2e2d;
+    background-color: #2d2e2d00;
     border-style: none;
     font-size: 45px;
   }

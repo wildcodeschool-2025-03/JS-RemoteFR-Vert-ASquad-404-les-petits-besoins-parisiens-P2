@@ -2,6 +2,7 @@ import { useState } from "react";
 import "../assets/styles/card.css";
 import CardTitle from "../components/CardTitle";
 import DarkModeButton from "../components/DarkModeButton";
+import Filter from "../components/FilterButton";
 import CardListFountain from "../components/Fountain/CardListFountain";
 import MyMaps from "../components/MyMaps/MyMaps";
 import NavBarDesktop from "../components/NavBarDesktop";
@@ -24,6 +25,9 @@ function FountainPage() {
     <div className="page">
       <div className="dark-mode">
         <DarkModeButton />
+      </div>
+      <div className="filter-button">
+        <Filter />
       </div>
       <div className="navBarDesktop">
         <NavBarDesktop />
