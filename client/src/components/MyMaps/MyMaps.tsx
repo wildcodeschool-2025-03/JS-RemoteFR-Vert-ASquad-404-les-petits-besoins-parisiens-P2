@@ -23,35 +23,34 @@ import {
 } from "@vis.gl/react-google-maps";
 import "../../assets/styles/card.css";
 
-type Poi = { key: string; location: google.maps.LatLngLiteral };
+type Poi = { key: string; location: google.maps.LatLngLiteral; color: string };
 
+type MyMapProps = {
+  poiCenter: Poi;
+};
 const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
-const locations: Poi[] = [
-  {
-    key: "firstToiletResult",
-    location: { lat: 48.88445504769741, lng: 2.3427360292097643 },
-  },
-];
-const firstToiletResult = { lat: 48.88445504769741, lng: 2.3427360292097643 };
-const MyMap = () => (
+
+const MyMap = ({ poiCenter }: MyMapProps) => (
   <APIProvider apiKey={apiKey}>
     <div className="googleMapsStyle">
-      <Map mapId="MyMapId" defaultZoom={17} defaultCenter={firstToiletResult}>
-        <PoiMarkers pois={locations} />
+      <Map mapId="MyMapId" defaultZoom={18} center={poiCenter.location}>
+        <PoiCenterMarkers poi={poiCenter} />
       </Map>
     </div>
   </APIProvider>
 );
 
 export default MyMap;
-const PoiMarkers = (props: { pois: Poi[] }) => {
+const PoiCenterMarkers = (props: { poi: Poi }) => {
   return (
     <>
-      {props.pois.map((poi: Poi) => (
-        <AdvancedMarker key={poi.key} position={poi.location}>
-          <Pin background={"red"} glyphColor={"#000"} borderColor={"#000"} />
-        </AdvancedMarker>
-      ))}
+      <AdvancedMarker key={props.poi.key} position={props.poi.location}>
+        <Pin
+          background={props.poi.color}
+          glyphColor={"black"}
+          borderColor={"#A14AFF"}
+        />
+      </AdvancedMarker>
     </>
   );
 };

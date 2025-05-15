@@ -1,7 +1,11 @@
 import { useEffect, useState } from "react";
 import ToiletsCard from "./ToiletsCard";
 
-export default function CardListToilets() {
+type Poi = { key: string; location: google.maps.LatLngLiteral; color: string };
+type MyMapProps = {
+  setPoiCenter: React.Dispatch<React.SetStateAction<Poi>>;
+};
+export default function CardListToilets({ setPoiCenter }: MyMapProps) {
   type toiletsType = {
     adresse: string;
     arrondissement: number;
@@ -17,6 +21,7 @@ export default function CardListToilets() {
     total_count: number;
     results: toiletsType[];
   };
+
   const [toilets, setToilets] = useState<toiletsResponse | null>(null);
 
   useEffect(() => {
@@ -37,7 +42,11 @@ export default function CardListToilets() {
     <article className="toilets-card-list">
       {Array.isArray(toilets?.results) ? (
         toilets.results.map((t) => (
-          <ToiletsCard key={t.geo_point_2d.lon} toilets={t} />
+          <ToiletsCard
+            key={t.geo_point_2d.lon}
+            toilets={t}
+            setPoiCenter={setPoiCenter}
+          />
         ))
       ) : (
         <h2>Loading, please wait a second ..</h2>

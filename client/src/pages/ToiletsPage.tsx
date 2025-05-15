@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "../assets/styles/card.css";
 import CardListToilets from "../components/CardListToilets";
 import CardTitle from "../components/CardTitle";
@@ -8,6 +9,17 @@ import NavBar from "../components/Navbar";
 import ScrollToTopButton from "../components/ScrollButton";
 
 export default function ToiletsPage() {
+  type Poi = {
+    key: string;
+    location: google.maps.LatLngLiteral;
+    color: string;
+  };
+  const centerParis: Poi = {
+    key: "Paris",
+    location: { lat: 48.8586382, lng: 2.2955542 },
+    color: "#A14AFF",
+  };
+  const [poiCenter, setPoiCenter] = useState(centerParis);
   return (
     <div className="page">
       <div className="dark-mode">
@@ -19,12 +31,12 @@ export default function ToiletsPage() {
       <article className="cardList">
         <CardTitle />
         <div>
-          <MyMaps />
+          <MyMaps poiCenter={poiCenter} />
         </div>
         <div className="nav-mobile desktop">
           <NavBar />
         </div>
-        <CardListToilets />
+        <CardListToilets setPoiCenter={setPoiCenter} />
       </article>
       <ScrollToTopButton />
     </div>
