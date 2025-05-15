@@ -53,8 +53,10 @@
     padding-top: 0;
     gap: 2em;
   }
-  .map {
-    display: none;
+
+  .googleMapsStyle {
+    width: 80vw;
+    height: 40vh;
   }
 
   /* NAV BAR */
@@ -145,17 +147,10 @@
     flex-direction: column;
     gap: 2.5em;
   }
-  .cardMap {
-    display: flex;
-    justify-content: center;
-    max-height: 17em;
-    .map {
-      border-radius: 3em;
-      width: 60em;
-      object-fit: cover;
-      display: flex;
-      justify-content: center;
-    }
+
+  .googleMapsStyle {
+    width: 60vw;
+    height: 40vh;
   }
 
   /* NAV BAR */

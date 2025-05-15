@@ -1,7 +1,11 @@
 import { useEffect, useState } from "react";
 import FountainsCard from "./FountainsCard";
 
-function CardListFountains() {
+type Poi = { key: string; location: google.maps.LatLngLiteral; color: string };
+type MyMapProps = {
+  setPoiCenter: React.Dispatch<React.SetStateAction<Poi>>;
+};
+function CardListFountains({ setPoiCenter }: MyMapProps) {
   type FountainType = {
     identifiant_ratp: number;
     adresse: string;
@@ -38,7 +42,11 @@ function CardListFountains() {
     <article className="fountains-card-list">
       {fountains?.results.length ? (
         fountains.results.map((fountain) => (
-          <FountainsCard key={fountain.identifiant_ratp} fountain={fountain} />
+          <FountainsCard
+            key={fountain.identifiant_ratp}
+            fountain={fountain}
+            setPoiCenter={setPoiCenter}
+          />
         ))
       ) : (
         <h2>Loading, please wait a second...</h2>

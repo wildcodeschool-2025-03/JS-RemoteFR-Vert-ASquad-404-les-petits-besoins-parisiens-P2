@@ -13,8 +13,12 @@ type toiletsType = {
     lat: number;
   };
 };
-type Props = { toilets: toiletsType };
-export default function ToiletsCard({ toilets }: Props) {
+type Poi = { key: string; location: google.maps.LatLngLiteral; color: string };
+type Props = {
+  toilets: toiletsType;
+  setPoiCenter: React.Dispatch<React.SetStateAction<Poi>>;
+};
+export default function ToiletsCard({ toilets, setPoiCenter }: Props) {
   /* function pour les arrondissement*/
   function eniem(eniem: number) {
     if (eniem === 1) {
@@ -70,7 +74,21 @@ export default function ToiletsCard({ toilets }: Props) {
         </div>
       </div>
       <article className="buttonView">
-        <button className="button-toilettes" type="button">
+        <button
+          className="button-toilettes"
+          type="button"
+          onClick={() => {
+            window.scrollTo({ top: 200, behavior: "smooth" });
+            setPoiCenter({
+              key: toilets.adresse,
+              location: {
+                lat: toilets.geo_point_2d.lat,
+                lng: toilets.geo_point_2d.lon,
+              },
+              color: "#A14AFF",
+            });
+          }}
+        >
           {translations.DefibrillatorCard.view}
         </button>
       </article>

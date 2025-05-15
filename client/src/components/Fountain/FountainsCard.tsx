@@ -14,10 +14,13 @@ type FountainType = {
     lat: number;
   };
 };
+type Poi = { key: string; location: google.maps.LatLngLiteral; color: string };
+type Props = {
+  fountain: FountainType;
+  setPoiCenter: React.Dispatch<React.SetStateAction<Poi>>;
+};
 
-type Props = { fountain: FountainType };
-
-function FountainsCard({ fountain }: Props) {
+function FountainsCard({ fountain, setPoiCenter }: Props) {
   /* function pour les arrondissement*/
   function eniem(eniem: number) {
     if (eniem === 1) {
@@ -46,7 +49,21 @@ function FountainsCard({ fountain }: Props) {
           {fountain.station_ou_gare}
         </p>
       </span>
-      <button className="button-fountain" type="button">
+      <button
+        className="button-fountain"
+        type="button"
+        onClick={() => {
+          window.scrollTo({ top: 200, behavior: "smooth" });
+          setPoiCenter({
+            key: fountain.adresse,
+            location: {
+              lat: fountain.point_geographique.lat,
+              lng: fountain.point_geographique.lon,
+            },
+            color: "#A14AFF",
+          });
+        }}
+      >
         {translations.fountainsCard.view}
       </button>
       <ButtonLike />

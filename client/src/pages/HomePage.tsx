@@ -41,7 +41,6 @@ function HomePage() {
         <div className="nav-mobile">
           <NavBar />
         </div>
-
         <img src={background} alt="train" className="picturetrain" />
       </div>
     </>
