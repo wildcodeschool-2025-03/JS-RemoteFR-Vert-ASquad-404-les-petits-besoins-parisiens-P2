@@ -78,7 +78,7 @@ export default function ToiletsCard({ toilets, setPoiCenter }: Props) {
           className="button-toilettes"
           type="button"
           onClick={() => {
-            window.scrollTo({ top: 0, behavior: "smooth" });
+            window.scrollTo({ top: 200, behavior: "smooth" });
             setPoiCenter({
               key: toilets.adresse,
               location: {
