@@ -2,6 +2,7 @@ import Geolocation from "../../assets/images/geolocation.png";
 import "../../assets/styles/fontainsCard.css";
 import { useTranslation } from "../../contexts/LocaleContext";
 import ButtonLike from "../ButtonLike";
+import SocialNetworks from "../SocialNetworks";
 
 type FountainType = {
   identifiant_ratp: number;
@@ -50,6 +51,7 @@ function FountainsCard({ fountain }: Props) {
         {translations.fountainsCard.view}
       </button>
       <ButtonLike />
+      <SocialNetworks />
     </div>
   );
 }
