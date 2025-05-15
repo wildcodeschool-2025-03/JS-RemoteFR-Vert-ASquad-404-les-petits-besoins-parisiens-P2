@@ -3,6 +3,7 @@ import mapParis from "../assets/images/map-Paris.png";
 import CardListToilets from "../components/CardListToilets";
 import CardTitle from "../components/CardTitle";
 import DarkModeButton from "../components/DarkModeButton";
+import Filter from "../components/FilterButton";
 import NavBarDesktop from "../components/NavBarDesktop";
 import NavBar from "../components/Navbar";
 
@@ -11,6 +12,9 @@ export default function ToiletsPage() {
     <div className="page">
       <div className="dark-mode">
         <DarkModeButton />
+      </div>
+      <div className="filter-button">
+        <Filter />
       </div>
       <div className="navBarDesktop">
         <NavBarDesktop />
