@@ -20,12 +20,12 @@
   },
 
   "CardTitle": {
-    "titre": "Toilet",
+    "titre": "Toilets",
     "paragraph": "Available",
-    "Toilet": "Toilet",
+    "Toilet": "Toilets",
     "Waterfountains": "Water fountains",
     "shops": "Shops",
-    "Defibrillators": "Defibrillator"
+    "Defibrillators": "Defibrillators"
   },
 
   "DefibrillatorCard": {
@@ -37,33 +37,33 @@
   },
 
   "navbar": {
-    "Toilet": "Toilet",
+    "Toilet": "Toilets",
     "Waterfountains": "Water fountains",
-    "shops": "shops",
-    "Defibrillators": "Defibrillator"
+    "shops": "Shops",
+    "Defibrillators": "Defibrillators"
   },
 
   "navbarDesktop": {
-    "Toilet": "Toilet",
+    "Toilet": "Toilets",
     "Waterfountains": "Water fountains",
     "shops": "Shops",
-    "Defibrillators": "Defibrillator"
+    "Defibrillators": "Defibrillators"
   },
 
   "ToiletsCard": {
-    "time": "Hourly :",
-    "access": "wheelchair access :",
-    "baby": "baby care room :",
-    "view": "View on the map :"
+    "time": "Hourly:",
+    "access": "Wheelchair access:",
+    "baby": "Baby care room:",
+    "view": "View on the map:"
   },
 
   "fountainsCard": {
     "line": "line: ",
-    "view": "View on the map :"
+    "view": "View on the map:"
   },
 
   "shopCard": {
-    "view": "View on the map :",
-    "closedOn": "Closed on : "
+    "view": "View on the map:",
+    "closedOn": "Closed on: "
   }
 }

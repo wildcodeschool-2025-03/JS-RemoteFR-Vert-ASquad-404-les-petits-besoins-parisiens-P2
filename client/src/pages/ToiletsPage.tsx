@@ -5,6 +5,7 @@ import DarkModeButton from "../components/DarkModeButton";
 import MyMaps from "../components/MyMaps/MyMaps";
 import NavBarDesktop from "../components/NavBarDesktop";
 import NavBar from "../components/Navbar";
+import ScrollToTopButton from "../components/ScrollButton";
 
 export default function ToiletsPage() {
   return (
@@ -25,6 +26,7 @@ export default function ToiletsPage() {
         </div>
         <CardListToilets />
       </article>
+      <ScrollToTopButton />
     </div>
   );
 }

@@ -21,7 +21,7 @@
 
   "CardTitle": {
     "titre": "Toilettes",
-    "paragraph": "disponible",
+    "paragraph": "disponibles",
     "Toilet": "Toilettes",
     "Waterfountains": "Fontaines à eau",
     "shops": "Commerces",
@@ -63,7 +63,7 @@
   },
 
   "shopCard": {
-    "view": "Voir sur la carte : ",
-    "closedOn": "Fermé le : "
+    "view": "Voir sur la carte: ",
+    "closedOn": "Fermé le: "
   }
 }

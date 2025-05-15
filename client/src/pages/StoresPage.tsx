@@ -5,6 +5,7 @@ import CardTitle from "../components/CardTitle";
 import DarkModeButton from "../components/DarkModeButton";
 import NavBarDesktop from "../components/NavBarDesktop";
 import NavBar from "../components/Navbar";
+import ScrollToTopButton from "../components/ScrollButton";
 
 function StoresPage() {
   return (
@@ -25,6 +26,7 @@ function StoresPage() {
         </div>
         <CardListShop />
       </article>
+      <ScrollToTopButton />
     </div>
   );
 }

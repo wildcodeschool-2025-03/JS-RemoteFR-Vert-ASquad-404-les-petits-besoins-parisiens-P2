@@ -5,6 +5,7 @@ import DarkModeButton from "../components/DarkModeButton";
 import CardListFountain from "../components/Fountain/CardListFountain";
 import NavBarDesktop from "../components/NavBarDesktop";
 import NavBar from "../components/Navbar";
+import ScrollToTopButton from "../components/ScrollButton.tsx";
 
 function FountainPage() {
   return (
@@ -25,6 +26,7 @@ function FountainPage() {
         </div>
         <CardListFountain />
       </article>
+      <ScrollToTopButton />
     </div>
   );
 }
