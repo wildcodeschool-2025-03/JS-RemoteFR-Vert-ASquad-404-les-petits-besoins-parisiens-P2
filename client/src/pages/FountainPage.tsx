@@ -16,7 +16,7 @@ function FountainPage() {
   };
   const centerParis: Poi = {
     key: "Paris",
-    location: { lat: 48.8586382, lng: 2.2955542 },
+    location: { lat: 48.8583276, lng: 2.2944867 },
     color: "#A14AFF",
   };
   const [poiCenter, setPoiCenter] = useState(centerParis);

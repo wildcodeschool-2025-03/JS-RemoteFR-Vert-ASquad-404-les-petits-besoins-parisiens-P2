@@ -1,7 +1,11 @@
 import { useEffect, useState } from "react";
 import DefibrillatorCard from "./DefibrillatorCard";
 
-export default function CardListDefibrillators() {
+type Poi = { key: string; location: google.maps.LatLngLiteral; color: string };
+type MyMapProps = {
+  setPoiCenter: React.Dispatch<React.SetStateAction<Poi>>;
+};
+export default function CardListDefibrillators({ setPoiCenter }: MyMapProps) {
   type defibrillatorsType = {
     lat_coor1: string;
     long_coord1: number;
@@ -43,7 +47,11 @@ export default function CardListDefibrillators() {
     <article className="defibrillator-card-list">
       {Array.isArray(defibrillators?.results) ? (
         defibrillators?.results.map((t) => (
-          <DefibrillatorCard key={t.point_geographique.lon} defibrillator={t} />
+          <DefibrillatorCard
+            key={t.point_geographique.lon}
+            defibrillator={t}
+            setPoiCenter={setPoiCenter}
+          />
         ))
       ) : (
         <h2>Loading, please wait a second ..</h2>

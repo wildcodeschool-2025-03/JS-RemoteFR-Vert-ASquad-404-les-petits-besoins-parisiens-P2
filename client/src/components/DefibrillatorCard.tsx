@@ -18,9 +18,15 @@ type defibrillatorsType = {
     lat: number;
   };
 };
-
-type Props = { defibrillator: defibrillatorsType };
-export default function DefibrillatorCard(_props: Props) {
+type Poi = { key: string; location: google.maps.LatLngLiteral; color: string };
+type Props = {
+  defibrillator: defibrillatorsType;
+  setPoiCenter: React.Dispatch<React.SetStateAction<Poi>>;
+};
+export default function DefibrillatorCard({
+  defibrillator,
+  setPoiCenter,
+}: Props) {
   /* function pour les arrondissement*/
   function arrondissement(arrondissement: number) {
     if (arrondissement === 1) {
@@ -35,9 +41,9 @@ export default function DefibrillatorCard(_props: Props) {
   /* Function pour l'adresse Cité incomplete */
   function cite(cite: string) {
     if (cite.includes("Cité")) {
-      return `Métro ${_props.defibrillator.adr_voie}`;
+      return `Métro ${defibrillator.adr_voie}`;
     }
-    return _props.defibrillator.adr_voie;
+    return defibrillator.adr_voie;
   }
 
   const { translations } = useTranslation();
@@ -51,26 +57,37 @@ export default function DefibrillatorCard(_props: Props) {
           alt="ping"
         />
         <span className="defibrillator-adress">
-          {cite(_props.defibrillator.adr_voie)}
+          {cite(defibrillator.adr_voie)}
         </span>
       </div>
       <div className="defibrillator-info">
-        <div>
-          {arrondissement(_props.defibrillator.com_cp % 100)} arrondissement
-        </div>
+        <div>{arrondissement(defibrillator.com_cp % 100)} arrondissement</div>
         <div className="separation" />
         <div>
-          {translations.DefibrillatorCard.time} {_props.defibrillator.dispo_h}
+          {translations.DefibrillatorCard.time} {defibrillator.dispo_h}
         </div>
         <div>
-          {translations.DefibrillatorCard.available}{" "}
-          {_props.defibrillator.dispo_i}
+          {translations.DefibrillatorCard.available} {defibrillator.dispo_i}
         </div>
         <div>
-          {translations.DefibrillatorCard.access} {_props.defibrillator.acc_lib}
+          {translations.DefibrillatorCard.access} {defibrillator.acc_lib}
         </div>
       </div>
-      <button className="button-defibrillator" type="button">
+      <button
+        className="button-defibrillator"
+        type="button"
+        onClick={() => {
+          window.scrollTo({ top: 200, behavior: "smooth" });
+          setPoiCenter({
+            key: defibrillator.adr_voie,
+            location: {
+              lat: defibrillator.point_geographique.lat,
+              lng: defibrillator.point_geographique.lon,
+            },
+            color: "#A14AFF",
+          });
+        }}
+      >
         {translations.DefibrillatorCard.view}
       </button>
       <ButtonLike />
