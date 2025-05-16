@@ -2,6 +2,7 @@ import "../assets/styles/defibrillatorcard.css";
 import Geolocation from "../assets/images/geolocation.png";
 import { useTranslation } from "../contexts/LocaleContext";
 import ButtonLike from "./ButtonLike";
+import SocialNetworks from "./SocialNetworks";
 type defibrillatorsType = {
   lat_coor1: string;
   long_coord1: number;
@@ -91,6 +92,7 @@ export default function DefibrillatorCard({
         {translations.DefibrillatorCard.view}
       </button>
       <ButtonLike />
+      <SocialNetworks />
     </div>
   );
 }
