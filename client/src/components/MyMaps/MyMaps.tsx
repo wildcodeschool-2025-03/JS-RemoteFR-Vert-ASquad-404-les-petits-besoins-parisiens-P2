@@ -33,7 +33,7 @@ const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
 const MyMap = ({ poiCenter }: MyMapProps) => (
   <APIProvider apiKey={apiKey}>
     <div className="googleMapsStyle">
-      <Map mapId="MyMapId" defaultZoom={18} defaultCenter={poiCenter.location}>
+      <Map mapId="MyMapId" defaultZoom={18} center={poiCenter.location}>
         <PoiCenterMarkers poi={poiCenter} />
       </Map>
     </div>
