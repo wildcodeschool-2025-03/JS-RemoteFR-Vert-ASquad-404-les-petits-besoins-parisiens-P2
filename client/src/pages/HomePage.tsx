@@ -1,19 +1,31 @@
 import "../assets/styles/homepage.css";
+import { NavLink } from "react-router-dom";
 import mascotte from "../assets/images/Mascotte.svg";
 import homeIcone from "../assets/images/home.png";
 import background from "../assets/images/train.jpg";
+import DarkModeButton from "../components/DarkModeButton";
 import NavBar from "../components/Navbar";
+import ButtonLanguage from "../components/buttonLanguage";
+import { useTranslation } from "../contexts/LocaleContext";
 
 function HomePage() {
+  const { translations } = useTranslation();
+
   return (
     <>
       <div className="container4">
+        <div>
+          <ButtonLanguage />
+        </div>
+        <div className="dark-mode-home">
+          <DarkModeButton />
+        </div>
         <div className="container3">
           <div className="container2">
             <div className="container1">
-              <a href="/">
+              <NavLink to="/">
                 <img src={homeIcone} alt="Icone Home" className="home" />
-              </a>
+              </NavLink>
               <h1>
                 LES PETITS
                 <br />
@@ -23,11 +35,11 @@ function HomePage() {
               </h1>
               <img src={mascotte} alt="mascotte" className="mascotte" />
             </div>
-            <p className="paragraphe">Trouver à proximité</p>
+            <p className="paragraphe">{translations.homepage.paragraph}</p>
           </div>
-          <div className="navbarportable">
-            <NavBar />
-          </div>
+        </div>
+        <div className="nav-mobile">
+          <NavBar />
         </div>
         <img src={background} alt="train" className="picturetrain" />
       </div>

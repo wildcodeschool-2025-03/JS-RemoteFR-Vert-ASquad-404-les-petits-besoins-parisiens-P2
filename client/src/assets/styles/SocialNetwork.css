@@ -1,0 +1,16 @@
+.socialNetworks {
+  display: flex;
+  align-items: center;
+  gap: 1.2em;
+  font-family: "Roboto", sans-serif;
+}
+
+.ig {
+  width: 2em;
+  height: 2em;
+}
+
+.social {
+  width: 1.8em;
+  height: 1.8em;
+}

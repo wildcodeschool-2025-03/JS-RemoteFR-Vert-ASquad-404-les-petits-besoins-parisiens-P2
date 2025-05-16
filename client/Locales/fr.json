@@ -1,0 +1,69 @@
+{
+  "homepage": {
+    "paragraph": "Trouver à proximité"
+  },
+
+  "cardAdress": {
+    "textbutton": "Voir sur la carte"
+  },
+
+  "cardList": {
+    "loading": "Chargement, veuillez patienter un instant."
+  },
+
+  "cardListDefibrillator": {
+    "loading": "Chargement, veuillez patienter un instant."
+  },
+
+  "cardListToilets": {
+    "loading": "Chargement, veuillez patienter un instant."
+  },
+
+  "CardTitle": {
+    "titre": "Toilettes",
+    "paragraph": "disponibles",
+    "Toilet": "Toilettes",
+    "Waterfountains": "Fontaines à eau",
+    "shops": "Commerces",
+    "Defibrillators": "Défibrillateurs"
+  },
+
+  "DefibrillatorCard": {
+    "functioncite": "Métro",
+    "time": "Horaire: ",
+    "available": "Disponibilité: ",
+    "access": "Disponibilité: ",
+    "view": "Voir sur la carte: "
+  },
+
+  "navbar": {
+    "Toilet": "Toilettes",
+    "Waterfountains": "Fontaines à eau",
+    "shops": "Commerces",
+    "Defibrillators": "Défibrillateurs"
+  },
+
+  "navbarDesktop": {
+    "Toilet": "Toilettes",
+    "Waterfountains": "Fontaines à eau",
+    "shops": "Commerces",
+    "Defibrillators": "Défibrillateurs"
+  },
+
+  "ToiletsCard": {
+    "time": "Horaire: ",
+    "access": "Accès PMR: ",
+    "baby": "Relais bébé: ",
+    "view": "Voir sur la carte: "
+  },
+
+  "fountainsCard": {
+    "line": "ligne: ",
+    "view": "Voir sur la carte: "
+  },
+
+  "shopCard": {
+    "view": "Voir sur la carte: ",
+    "closedOn": "Fermé le: "
+  }
+}

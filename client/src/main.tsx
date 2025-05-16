@@ -2,14 +2,18 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router";
+import { ThemeProvider } from "./contexts/ThemeContext";
 
 /* ************************************************************************* */
 
 // Import the main app component
 import App from "./App";
+import { LocaleProvider } from "./contexts/LocaleContext";
+import DefibrillatorPage from "./pages/DefibrillatorPage";
+import FountainPage from "./pages/FountainPage";
 import HomePage from "./pages/HomePage";
 import StoresPage from "./pages/StoresPage";
-import Toilets from "./pages/Toilets";
+import ToiletsPage from "./pages/ToiletsPage";
 
 // Import additional components for new routes
 // Try creating these components in the "pages" folder
@@ -28,11 +32,11 @@ const router = createBrowserRouter([
       { path: "/", element: <HomePage /> },
       {
         path: "/toilets",
-        element: <Toilets />,
+        element: <ToiletsPage />,
       },
       {
         path: "/fountains",
-        element: <Toilets />,
+        element: <FountainPage />,
       },
       {
         path: "/stores",
@@ -40,7 +44,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/defibrillators",
-        element: <Toilets />,
+        element: <DefibrillatorPage />,
       },
       {
         path: "*",
@@ -64,7 +68,11 @@ if (rootElement == null) {
 // Render the app inside the root element
 createRoot(rootElement).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <ThemeProvider>
+      <LocaleProvider>
+        <RouterProvider router={router} />
+      </LocaleProvider>
+    </ThemeProvider>
   </StrictMode>,
 );
 

@@ -1,6 +1,3 @@
-body {
-  background-color: #2d2e2d;
-}
 @media screen and (max-width: 768px) {
   /* CARD TITLE */
   .mascotteTitle {
@@ -9,6 +6,14 @@ body {
   .logoPage {
     display: none;
   }
+
+  .dark-mode {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 1000;
+  }
+
   .cardTitle {
     display: flex;
     align-items: center;
@@ -48,19 +53,28 @@ body {
     padding-top: 0;
     gap: 2em;
   }
-  .map {
+
+  .googleMapsStyle {
+    width: 80vw;
+    height: 40vh;
+  }
+
+  /* NAV BAR */
+  .navBarDesktop {
     display: none;
   }
+
   /* CARD ADRESS */
   .cardAdressInfo {
     display: flex;
-    width: 15em;
+    width: 20em;
     max-height: 11em;
     background-color: #3c3b3b;
     border-radius: 2em;
     height: 12em;
     color: white;
     font-size: 1.3em;
+    margin: 2rem 0;
     .geolocation {
       display: none;
       height: 4em;
@@ -71,6 +85,18 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
+  .page {
+    display: flex;
+    justify-content: center;
+  }
+
+  .dark-mode {
+    position: absolute;
+    top: 40px;
+    left: 60px;
+    z-index: 1000;
+  }
+
   /* CARD TITLE */
   .mascotteTitle {
     height: 9em;
@@ -119,20 +145,25 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 2.5em 0;
     gap: 2.5em;
   }
-  .cardMap {
-    display: flex;
-    justify-content: center;
-    max-height: 17em;
-    .map {
-      border-radius: 3em;
-      width: 60em;
-      object-fit: cover;
-      display: flex;
-      justify-content: center;
-    }
+
+  .googleMapsStyle {
+    width: 60vw;
+    height: 40vh;
+  }
+
+  /* NAV BAR */
+  .navBarDesktop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 10%;
+    margin-left: 3%;
+  }
+
+  .navBarMobile {
+    display: none;
   }
 
   /* CARD ADRESS */
@@ -152,6 +183,7 @@ body {
     height: 9em;
     color: white;
     font-size: 1.8em;
+    margin: 2.5rem 0;
     .geolocation {
       height: 3.5em;
     }

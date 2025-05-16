@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "../assets/styles/card.css";
-import CardListShop from "../components/CardListShop";
+import CardListToilets from "../components/CardListToilets";
 import CardTitle from "../components/CardTitle";
 import DarkModeButton from "../components/DarkModeButton";
 import Filter from "../components/FilterButton";
@@ -9,7 +9,7 @@ import NavBarDesktop from "../components/NavBarDesktop";
 import NavBar from "../components/Navbar";
 import ScrollToTopButton from "../components/ScrollButton";
 
-function StoresPage() {
+export default function ToiletsPage() {
   type Poi = {
     key: string;
     location: google.maps.LatLngLiteral;
@@ -40,11 +40,9 @@ function StoresPage() {
         <div className="nav-mobile desktop">
           <NavBar />
         </div>
-        <CardListShop setPoiCenter={setPoiCenter} />
+        <CardListToilets setPoiCenter={setPoiCenter} />
       </article>
       <ScrollToTopButton />
     </div>
   );
 }
-
-export default StoresPage;

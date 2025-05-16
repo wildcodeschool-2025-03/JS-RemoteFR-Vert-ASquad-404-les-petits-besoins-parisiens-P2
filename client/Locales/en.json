@@ -1,0 +1,69 @@
+{
+  "homepage": {
+    "paragraph": "Find nearby"
+  },
+
+  "cardAdress": {
+    "textbutton": "View on the map"
+  },
+
+  "cardList": {
+    "loading": "Loading, please wait a second .."
+  },
+
+  "cardListDefibrillator": {
+    "loading": "Loading, please wait a second .."
+  },
+
+  "cardListToilets": {
+    "loading": "Loading, please wait a second .."
+  },
+
+  "CardTitle": {
+    "titre": "Toilets",
+    "paragraph": "Available",
+    "Toilet": "Toilets",
+    "Waterfountains": "Water fountains",
+    "shops": "Shops",
+    "Defibrillators": "Defibrillators"
+  },
+
+  "DefibrillatorCard": {
+    "functioncite": "Subway",
+    "time": "Hourly: ",
+    "available": "Available: ",
+    "access": "Free access: ",
+    "view": "View on the map: "
+  },
+
+  "navbar": {
+    "Toilet": "Toilets",
+    "Waterfountains": "Water fountains",
+    "shops": "Shops",
+    "Defibrillators": "Defibrillators"
+  },
+
+  "navbarDesktop": {
+    "Toilet": "Toilets",
+    "Waterfountains": "Water fountains",
+    "shops": "Shops",
+    "Defibrillators": "Defibrillators"
+  },
+
+  "ToiletsCard": {
+    "time": "Hourly:",
+    "access": "Wheelchair access:",
+    "baby": "Baby care room:",
+    "view": "View on the map:"
+  },
+
+  "fountainsCard": {
+    "line": "line: ",
+    "view": "View on the map:"
+  },
+
+  "shopCard": {
+    "view": "View on the map:",
+    "closedOn": "Closed on: "
+  }
+}

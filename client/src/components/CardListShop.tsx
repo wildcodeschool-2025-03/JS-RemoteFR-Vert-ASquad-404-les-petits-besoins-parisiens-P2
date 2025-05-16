@@ -1,7 +1,11 @@
 import { useEffect, useState } from "react";
 import StoreCard from "./StoreCard";
 
-function CardList() {
+type Poi = { key: string; location: google.maps.LatLngLiteral; color: string };
+type MyMapProps = {
+  setPoiCenter: React.Dispatch<React.SetStateAction<Poi>>;
+};
+function CardListShop({ setPoiCenter }: MyMapProps) {
   type storeType = {
     tco_libelle: string;
     dea_code: number;
@@ -40,7 +44,9 @@ function CardList() {
   return (
     <article className="stores-card-list">
       {Array.isArray(stores?.results) ? (
-        stores.results.map((s) => <StoreCard key={s.dea_code} store={s} />)
+        stores.results.map((s) => (
+          <StoreCard key={s.dea_code} store={s} setPoiCenter={setPoiCenter} />
+        ))
       ) : (
         <h2>Loading, please wait a second ..</h2>
       )}
@@ -48,4 +54,4 @@ function CardList() {
   );
 }
 
-export default CardList;
+export default CardListShop;

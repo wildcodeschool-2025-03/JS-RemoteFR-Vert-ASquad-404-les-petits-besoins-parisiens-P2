@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "../assets/styles/card.css";
-import CardListShop from "../components/CardListShop";
+import CardListDefibrillators from "../components/CardListDefibrillator";
 import CardTitle from "../components/CardTitle";
 import DarkModeButton from "../components/DarkModeButton";
 import Filter from "../components/FilterButton";
@@ -9,7 +9,7 @@ import NavBarDesktop from "../components/NavBarDesktop";
 import NavBar from "../components/Navbar";
 import ScrollToTopButton from "../components/ScrollButton";
 
-function StoresPage() {
+function DefibrillatorPage() {
   type Poi = {
     key: string;
     location: google.maps.LatLngLiteral;
@@ -22,29 +22,31 @@ function StoresPage() {
   };
   const [poiCenter, setPoiCenter] = useState(centerParis);
   return (
-    <div className="page">
-      <div className="dark-mode">
-        <DarkModeButton />
-      </div>
-      <div className="filter-button">
-        <Filter />
-      </div>
-      <div className="navBarDesktop">
-        <NavBarDesktop />
-      </div>
-      <article className="cardList">
-        <CardTitle />
-        <div>
-          <MyMaps poiCenter={poiCenter} />
+    <>
+      <div className="page">
+        <div className="dark-mode">
+          <DarkModeButton />
         </div>
-        <div className="nav-mobile desktop">
-          <NavBar />
+        <div className="filter-button">
+          <Filter />
         </div>
-        <CardListShop setPoiCenter={setPoiCenter} />
-      </article>
-      <ScrollToTopButton />
-    </div>
+        <div className="navBarDesktop">
+          <NavBarDesktop />
+        </div>
+        <article className="cardList">
+          <CardTitle />
+          <div>
+            <MyMaps poiCenter={poiCenter} />
+          </div>
+          <CardListDefibrillators setPoiCenter={setPoiCenter} />
+          <div className="nav-mobile desktop">
+            <NavBar />
+          </div>
+        </article>
+        <ScrollToTopButton />
+      </div>
+    </>
   );
 }
 
-export default StoresPage;
+export default DefibrillatorPage;
