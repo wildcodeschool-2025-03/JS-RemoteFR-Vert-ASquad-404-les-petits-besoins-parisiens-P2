@@ -24,24 +24,39 @@ type Props = {
 };
 
 function StoreCard({ store, setPoiCenter }: Props) {
+  function nc(nc: string) {
+    if (nc !== null) {
+      return store.dea_jour_fermeture;
+    }
+    return "/";
+  }
+  function eniem(eniem: number) {
+    if (eniem === 1) {
+      return "1er";
+    }
+    if (eniem === 2) {
+      return "2nd";
+    }
+    return ` ${eniem}ème `;
+  }
   const { translations } = useTranslation();
   return (
     <div className="cardAdressInfoShop">
       <div className="shop-header">
         <img className="geolocation-shop" src={Geolocation} alt="ping" />
-        <span className="shop-adress">
-          {store.dea_rue_livraison}, {store.dea_cp_livraison}{" "}
-          {store.dea_commune_livraison}
-        </span>
+        <div className="shop-adress">{store.dea_rue_livraison}</div>
       </div>
       <span className="shop-info">
+        {eniem(store.dea_cp_livraison % 100)} arrondissement
+        <div className="separation" />
         <p>
-          {store.tco_libelle} | {store.dea_nom_commerce}
+          {store.tco_libelle.toUpperCase().charAt(0)}
+          {store.tco_libelle.slice(1)} | {store.dea_nom_commerce}
         </p>
         <p className="code-postal">
           {" "}
           {translations.shopCard.closedOn}
-          {store.dea_jour_fermeture}
+          {nc(store.dea_jour_fermeture)}
         </p>
       </span>
       <button
