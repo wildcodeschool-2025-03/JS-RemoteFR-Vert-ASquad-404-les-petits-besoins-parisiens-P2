@@ -1,0 +1,40 @@
+.navbar-listDesktop {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 15px;
+  margin-top: 10%;
+  width: 10%;
+}
+
+.nav-home {
+  width: 40px;
+  margin-left: 25px;
+}
+
+.nav-containerDesktop {
+  transition: 0.8s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #a14aff;
+  height: auto;
+  width: 87px;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.nav-containerDesktop:hover {
+  box-shadow: 5px 8px 20px black;
+}
+
+.nav-iconDesktop {
+  height: auto;
+  padding: 15px;
+  width: 100%;
+  height: auto;
+}
+
+.nav-textDesktop {
+  display: none;
+}

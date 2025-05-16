@@ -2,11 +2,18 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router";
+import { ThemeProvider } from "./contexts/ThemeContext";
 
 /* ************************************************************************* */
 
 // Import the main app component
 import App from "./App";
+import { LocaleProvider } from "./contexts/LocaleContext";
+import DefibrillatorPage from "./pages/DefibrillatorPage";
+import FountainPage from "./pages/FountainPage";
+import HomePage from "./pages/HomePage";
+import StoresPage from "./pages/StoresPage";
+import ToiletsPage from "./pages/ToiletsPage";
 
 // Import additional components for new routes
 // Try creating these components in the "pages" folder
@@ -20,8 +27,31 @@ import App from "./App";
 // You can add more routes as you build out your app!
 const router = createBrowserRouter([
   {
-    path: "/", // The root path
-    element: <App />, // Renders the App component for the home page
+    element: <App />,
+    children: [
+      { path: "/", element: <HomePage /> },
+      {
+        path: "/toilets",
+        element: <ToiletsPage />,
+      },
+      {
+        path: "/fountains",
+        element: <FountainPage />,
+      },
+      {
+        path: "/stores",
+        element: <StoresPage />,
+      },
+      {
+        path: "/defibrillators",
+        element: <DefibrillatorPage />,
+      },
+      {
+        path: "*",
+        element: <h1>Tu es perdu !</h1>,
+      },
+      // Renders the App component for the home page
+    ],
   },
   // Try adding a new route! For example, "/about" with an About component
 ]);
@@ -38,8 +68,12 @@ if (rootElement == null) {
 // Render the app inside the root element
 createRoot(rootElement).render(
   <StrictMode>
-    <RouterProvider router={router} />
-  </StrictMode>
+    <ThemeProvider>
+      <LocaleProvider>
+        <RouterProvider router={router} />
+      </LocaleProvider>
+    </ThemeProvider>
+  </StrictMode>,
 );
 
 /**
